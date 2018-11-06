@@ -3,7 +3,7 @@ const path = require("path");
 const express = require("express");
 const chalk = require("chalk");
 const debug = require("debug")("app");
-// const morgan = require("morgan");
+const morgan = require("morgan");
 
 // Init App
 const app = express();
@@ -12,7 +12,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 // Bring Middleware
-// app.use(morgan("tiny"));
+app.use(morgan("dev"));
 
 // Bring EJS Template
 app.set("views", path.join(__dirname, "views"));
