@@ -30,6 +30,9 @@ app.use("/js", express.static(path.join(__dirname, "/node_modules/jquery/dist"))
 app.use("/js", express.static(path.join(__dirname, "/node_modules/popper.js/dist/umd")));
 
 // Using Routes
+app.get("/", (req, res) => {
+  res.render("index");
+});
 app.use("/product", productRoutes);
 app.use("/user", userRoutes);
 
