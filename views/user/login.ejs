@@ -13,7 +13,6 @@
     <!-- Navbar -->
     <%- include('../partial/navbar.ejs') %>
 
-
     <main>
 
         <!-- Container -->
@@ -25,7 +24,7 @@
 
                     <!-- Error Flash MSG -->
                     <div class="card z-depth-3">
-                        <div class="alert mb-0" role="alert" style="background-color:rgba(244, 67, 54, 0.2); border-color:#F44336;">
+                        <div class="alert mb-0" role="alert" style="background-color:rgba(244, 67, 54, 0.3); border-color:#F44336;">
                             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -40,88 +39,82 @@
                     <div class="card hoverable mt-4">
         
                         <h5 class="card-header white-text text-center default-color-dark font-weight-bold text-uppercase py-4"><i class="fa fa-sign-in" aria-hidden="true"></i> &nbsp;&nbsp; Login</h5>
-        
-                        <!-- card -->
-                        <div class="card">
-        
-                            <!-- Card body -->
-                            <div class="card-body">
-        
-                                <!-- Card shadow -->
-                                <div class="z-depth-5">
-        
-                                    <!-- Card -->
-                                    <div class="card">
-        
-                                        <!-- Card content -->
-                                        <div class="card-body">
-        
-                                            <!-- Material input -->
-                                            <form class="needs-validation" action="/user/login" method="post"  novalidate>
-        
-                                                <!-- Email -->
-                                                <div class="md-form">
-                                                    <i class="fa fa-envelope prefix"></i>
-                                                    <label for="email">Email</label>
-                                                    <input type="email" name="email" class="form-control" required>
-                                                    <div class="invalid-feedback animated fadeInRight" style="margin-left: 40px; font-size: 13px;">
-                                                        S'il vous plaît ajouter un Email .
-                                                        </div>
-                                                    <div class="valid-feedback animated fadeInRight" style="margin-left: 40px;">
-                                                        Merci .
+                
+                        <!-- Card body -->
+                        <div class="card-body">
+    
+                            <!-- Card shadow -->
+                            <div class="z-depth-5">
+    
+                                <!-- Card -->
+                                <div class="card">
+    
+                                    <!-- Card content -->
+                                    <div class="card-body">
+    
+                                        <!-- Material input -->
+                                        <form class="needs-validation" action="/user/login" method="post"  novalidate>
+    
+                                            <!-- Email -->
+                                            <div class="md-form">
+                                                <i class="fa fa-envelope prefix"></i>
+                                                <label for="email">Email</label>
+                                                <input type="email" name="email" class="form-control" required>
+                                                <div class="invalid-feedback animated fadeInRight" style="margin-left: 40px; font-size: 13px;">
+                                                    S'il vous plaît ajouter un Email .
                                                     </div>
+                                                <div class="valid-feedback animated fadeInRight" style="margin-left: 40px;">
+                                                    Merci .
                                                 </div>
-        
-                                                <!-- Password -->
-                                                <div class="md-form mb-2">
-                                                    <i class="fa fa-lock prefix"></i>
-                                                    <input type="password" name="password" class="form-control" required>
-                                                    <label for="password">Mot de Passe</label>
-                                                    <div class="invalid-feedback animated fadeInRight" style="margin-left: 40px; font-size: 13px;">
-                                                        S'il vous plaît ajouter un Mot de Passe .
-                                                        </div>
-                                                    <div class="valid-feedback animated fadeInRight" style="margin-left: 40px;">
-                                                        Merci .
+                                            </div>
+    
+                                            <!-- Password -->
+                                            <div class="md-form mb-2">
+                                                <i class="fa fa-lock prefix"></i>
+                                                <input type="password" name="password" class="form-control" required>
+                                                <label for="password">Mot de Passe</label>
+                                                <div class="invalid-feedback animated fadeInRight" style="margin-left: 40px; font-size: 13px;">
+                                                    S'il vous plaît ajouter un Mot de Passe .
                                                     </div>
-
-                                                    <!-- <small class="form-text text-muted"><a href="#">Forgot Password ?</a></small> -->
+                                                <div class="valid-feedback animated fadeInRight" style="margin-left: 40px;">
+                                                    Merci .
                                                 </div>
 
-                                                <div class="d-flex justify-content-end">                                                    
-                                                    <small><a href="#">Mot de Passe Oublié ?</a></small>
-                                                </div>
+                                                <!-- <small class="form-text text-muted"><a href="#">Forgot Password ?</a></small> -->
+                                            </div>
 
-                                                <!-- Button -->
-                                                <div class="text-center">
-                                                    <button type="submit" class="btn btn-outline-success waves-effect"><i class="fa fa-key" aria-hidden="true"></i>&nbsp; Login</button>
-                                                </div>
-                                               
-                                                <!-- Social register -->
-                                                <hr>
-                                                <div class="d-flex justify-content-end">
-                                                    <p>Se Connecter avec un seul Click
-                                                        <a class="fb-ic ml-2 mr-2" role="button"><i class="fa fa-lg fa-facebook"></i> Facebook</a>
-                                                        <a class="gplus-ic mr-2" role="button"><i class="fa fa-lg fa-google-plus"></i> Google</a>
-                                                    </p>
-                                                </div>
+                                            <div class="d-flex justify-content-end">                                                    
+                                                <small><a href="#">Mot de Passe Oublié ?</a></small>
+                                            </div>
 
-                                            </form> 
-                                            <!-- Material input -->    
-        
-                                        </div>
-                                        <!-- Card content -->
-        
+                                            <!-- Button -->
+                                            <div class="text-center">
+                                                <button type="submit" class="btn btn-outline-success waves-effect"><i class="fa fa-key" aria-hidden="true"></i>&nbsp; Login</button>
+                                            </div>
+                                            
+                                            <!-- Social register -->
+                                            <hr>
+                                            <div class="d-flex justify-content-end">
+                                                <p>Se Connecter avec un seul Click
+                                                    <a class="fb-ic ml-2 mr-2" role="button"><i class="fa fa-lg fa-facebook"></i> Facebook</a>
+                                                    <a class="gplus-ic mr-2" role="button"><i class="fa fa-lg fa-google-plus"></i> Google</a>
+                                                </p>
+                                            </div>
+
+                                        </form> 
+                                        <!-- Material input -->    
+    
                                     </div>
-                                    <!-- Card -->
-        
+                                    <!-- Card content -->
+    
                                 </div>
-                                <!-- Card shadow -->    
-        
+                                <!-- Card -->
+    
                             </div>
-                            <!-- Card body -->
-        
+                            <!-- Card shadow -->    
+    
                         </div>
-                        <!-- card -->
+                        <!-- Card body -->
         
                     </div>
                     <!-- card hoverable --> 
