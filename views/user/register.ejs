@@ -1,5 +1,33 @@
     <!-- Head -->
     <%- include('../partial/head.ejs') %>
+
+    <!-- Bring StrongPassword CSS -->
+    <style>
+        .pd-password-valid {
+            color: green;
+        }
+        .pd-password-valid:before {
+            position: relative;
+            left: -5px;
+            content: "✔";
+        }
+        .pd-password-invalid {
+            color: #dc3545;
+        }
+        .pd-password-invalid:before {
+            position: relative;
+            left: -5px;
+            content: "✖";
+        }
+        .pd-password-message h3 {
+            font-size: 10pt;
+            margin-top: 10px;
+        }
+        .pd-password-message p {
+            margin: 7px 0 0 0;
+        }
+    </style>
+
     <style>
         body {
             background: #5D4157;  /* fallback for old browsers */
@@ -84,17 +112,15 @@
                                             <!-- Password -->
                                             <div class="md-form mb-2">
                                                 <i class="fa fa-lock prefix"></i>
-                                                <input type="password" name="password" class="form-control" required>
+                                                <input type="password" name="password" class="form-control pd-password-validation" required>
                                                 <label for="password">Mot de Passe</label>
-                                                <small id="passwordHelpBlock" class="form-text text-muted">
-                                                    Le mots de passe doivent comporter au moins 4 caractères
-                                                </small>
                                                 <div class="invalid-feedback animated fadeInRight" style="margin-left: 40px; font-size: 13px;">
-                                                    S'il vous plaît ajouter un Mot de Passe .
+                                                    S'il vous plaît ajouter un Mot de Passe Valid.
                                                     </div>
                                                 <div class="valid-feedback animated fadeInRight" style="margin-left: 40px;">
                                                     Merci .
                                                 </div>
+                                                <small id="passwordHelpBlock" class="form-text text-muted pd-password-message">
                                             </div>
 
                                             <!-- Password Confirmation -->
@@ -187,6 +213,15 @@
             });
         }, false);
         }());
+    </script>
+
+    <!-- Pidie Javascript -->
+    <script type="text/javascript" src="/js/StrongPassword.js"></script>
+
+    <!-- Bring Pidie -->
+    <script>
+        var pidie = new Pidie();
+        pidie.passwordValidation();
     </script>
 
 </body>
