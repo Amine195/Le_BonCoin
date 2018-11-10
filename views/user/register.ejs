@@ -3,27 +3,27 @@
 
     <!-- Bring StrongPassword CSS -->
     <style>
-        .pd-password-valid {
+        .password-valid {
             color: green;
         }
-        .pd-password-valid:before {
+        .password-valid:before {
             position: relative;
             left: -5px;
             content: "✔";
         }
-        .pd-password-invalid {
+        .password-invalid {
             color: #dc3545;
         }
-        .pd-password-invalid:before {
+        .password-invalid:before {
             position: relative;
             left: -5px;
             content: "✖";
         }
-        .pd-password-message h3 {
+        .password-message h3 {
             font-size: 10pt;
             margin-top: 5px;
         }
-        .pd-password-message p {
+        .password-message p {
             margin: 7px 0 0 0;
         }
     </style>
@@ -110,18 +110,13 @@
                                             </div>
     
                                             <!-- Password -->
-                                            <div class="md-form mb-2" id="pw">
+                                            <div class="md-form mb-2" id="password">
                                                 <i class="fa fa-lock prefix"></i>
-
-                                                <input type="password" name="password" class="form-control pd-input pd-password-validation mb-0" required>
-
+                                                <input type="password" name="password" class="form-control input password-validation mb-0" required>
                                                 <label for="password">Mot de Passe</label>
-
-                                                <small class="form-text text-muted mt-0"><button type="button" class="btn btn-md btn-link pd-button float-right p-0" style="color:grey!important;"><i class="fa fa-eye grey-text fa-lg" aria-hidden="true"></i> Visible</button></small>
-
+                                                <small class="form-text text-muted mt-0"><button type="button" class="btn btn-md btn-link button float-right p-0" style="color:grey!important;"><i class="fa fa-eye grey-text fa-lg" aria-hidden="true"></i> Visible</button></small>
                                                 <small class="form-text text-muted" style="color:#dc3545!important;">Doit contenir au moins un chiffre, une lettre majuscule et minuscule et au moins 8 caractères.</small>
-                                               
-                                                <small id="passwordHelpBlock" class="form-text text-muted pd-password-message"></small>
+                                                <small id="passwordHelpBlock" class="form-text text-muted password-message"></small>
                                             </div>
 
                                             <!-- Password Confirmation -->
@@ -172,6 +167,7 @@
         
                     </div>
                     <!-- card hoverable --> 
+                    
                 </div>
                 <!-- Center Card -->
 
@@ -196,7 +192,7 @@
     <!-- Script -->
     <%- include('../partial/script.ejs') %>
 
-    <!-- Example starter JavaScript for disabling form submissions if there are invalid fields -->
+    <!-- Mdb Validation -->
     <script>
         (function () {
         window.addEventListener("load", () => {
@@ -217,13 +213,13 @@
     </script>
 
     <!-- Pidie Javascript -->
-    <script type="text/javascript" src="/js/StrongPassword.js"></script>
+    <script type="text/javascript" src="/js/Password.js"></script>
 
     <!-- Bring Pidie -->
     <script>
         var pidie = new Pidie();
         pidie.passwordValidation();
-        pidie.togglePassword('#pw');
+        pidie.togglePassword('#password');
     </script>
 
 </body>
