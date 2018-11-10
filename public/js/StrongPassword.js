@@ -70,4 +70,19 @@ class Pidie {
             });
         }
 
+        togglePassword(id) {
+            var passwordField = document.querySelector(id);
+            var passwordInput = passwordField.querySelector('.pd-input');
+            var passwordToggle = passwordField.querySelector('.pd-button');
+            passwordToggle.addEventListener('click', function(){
+                if(passwordInput.type === 'password'){
+                    passwordInput.type = 'text';
+                    passwordToggle.innerHTML = '<i class="fa fa-eye-slash grey-text fa-lg" aria-hidden="true"></i> Invisible';
+                } else{
+                    passwordInput.type = 'password';
+                    passwordToggle.innerHTML = '<i class="fa fa-eye grey-text fa-lg" aria-hidden="true"></i> Visible';
+                }
+            });
+        }
+
 }
