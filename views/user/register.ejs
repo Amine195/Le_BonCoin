@@ -7,24 +7,20 @@
             color: green;
         }
         .password-valid:before {
-            position: relative;
-            left: -5px;
-            content: "✔";
+            content: "✔ ";
         }
         .password-invalid {
             color: #dc3545;
         }
-        .password-invalid:before {
-            position: relative;
-            left: -5px;
-            content: "✖";
+        .password-invalid:before {            
+            content: "✖ ";
         }
         .password-message h3 {
             font-size: 10pt;
             margin-top: 5px;
         }
         .password-message p {
-            margin: 7px 0 0 0;
+            margin: 5px 0 0 0;
         }
     </style>
 
@@ -112,8 +108,8 @@
                                             <!-- Password -->
                                             <div class="md-form mb-2" id="password-show">
                                                 <i class="fa fa-lock prefix"></i>
-                                                <input type="password" name="password" id="password" class="form-control input password-validation mb-0" required>
                                                 <label for="password">Mot de Passe</label>
+                                                <input type="password" name="password" id="password" class="form-control input password-validation mb-0" required>
                                                 <small class="form-text text-muted mt-0">
                                                     <div class="progress md-progress mb-0">
                                                         <div class="progress-bar progress-bar-striped progress-bar-animated" id="progress-bar" role="progressbar" style="width: 0;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
