@@ -33,6 +33,7 @@ app.use("/js", express.static(path.join(__dirname, "/node_modules/popper.js/dist
 app.get("/", (req, res) => {
   res.render("index", {
     path: "/",
+    PageTitle: "Index Page"
   });
 });
 

@@ -2,7 +2,9 @@ const express = require("express");
 const router = express.Router();
 
 router.get("/", (req, res) => {
-  res.render("product/index");
+  res.render("product/index", {
+    PageTitle: "Product Page"
+  });
 });
 
 router.get("/create", (req, res) => {

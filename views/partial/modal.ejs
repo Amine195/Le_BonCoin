@@ -1,0 +1,213 @@
+<!-- Modal Register -->
+<div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="ModalRegister" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body p-0">
+                
+                <!-- card hoverable Register -->
+                <div class="card hoverable">
+
+                    <h5 class="card-header white-text text-center default-color-dark font-weight-bold text-uppercase py-4"><i class="fa fa-user-plus" aria-hidden="true"></i> &nbsp;&nbsp; Register</h5>
+            
+                    <!-- Card body -->
+                    <div class="card-body">
+
+                        <!-- Card shadow -->
+                        <div class="z-depth-5">
+
+                            <!-- Card -->
+                            <div class="card">
+
+                                <!-- Card content -->
+                                <div class="card-body">
+
+                                    <!-- Material input -->
+                                    <form class="needs-validation" action="/user/login" method="post"  novalidate>
+
+                                        <!-- Username -->
+                                        <div class="md-form">
+                                            <i class="fa fa-user prefix"></i>
+                                            <label for="username">Nom Utilisateur</label>
+                                            <input type="text" name="username" class="form-control" required>
+                                            <div class="invalid-feedback" style="margin-left: 40px; font-size: 13px;">
+                                                S'il vous plaît ajouter un Nom Utilisateur .
+                                                </div>
+                                            <div class="valid-feedback" style="margin-left: 40px;">
+                                                Merci .
+                                            </div>
+                                        </div>
+                
+                                        <!-- Email -->
+                                        <div class="md-form">
+                                            <i class="fa fa-envelope prefix"></i>
+                                            <label for="email">Email</label>
+                                            <input type="email" name="email" class="form-control" required>
+                                            <div class="invalid-feedback" style="margin-left: 40px; font-size: 13px;">
+                                                S'il vous plaît ajouter un Email .
+                                                </div>
+                                            <div class="valid-feedback" style="margin-left: 40px;">
+                                                Merci .
+                                            </div>
+                                        </div>
+
+                                        <!-- Password -->
+                                        <div class="md-form mb-2" id="password-show">
+                                            <i class="fa fa-lock prefix"></i>
+                                            <label for="password">Mot de Passe</label>
+                                            <input type="password" name="password" id="password" class="form-control input password-validation mb-0" required>
+                                            <small class="form-text text-muted mt-0">
+                                                <div class="progress md-progress mb-0">
+                                                    <div class="progress-bar progress-bar-striped progress-bar-animated" id="progress-bar" role="progressbar" style="width: 0;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </small>
+                                            <small class="form-text text-muted mt-0"><button type="button" class="btn btn-md btn-link button float-right p-0" style="color:grey!important;"><i class="fa fa-eye grey-text fa-lg" aria-hidden="true"></i> Visible</button></small>
+                                            <small class="form-text text-muted" style="color:#dc3545!important;">Doit contenir au moins un chiffre, une lettre majuscule et minuscule et au moins 8 caractères.</small>
+                                            <small id="passwordHelpBlock" class="form-text text-muted password-message"></small>
+                                        </div>
+
+                                        <!-- Password Confirmation -->
+                                        <div class="md-form mb-2">
+                                            <i class="fa fa-lock prefix"></i>
+                                            <label for="confirm_password">Confirmation Mot de Passe</label>
+                                            <input type="password" name="confirm_password" class="form-control" required>
+                                            <div class="invalid-feedback" style="margin-left: 40px; font-size: 13px;">
+                                                S'il vous plaît ajouter un Mot de Passe .
+                                                </div>
+                                            <div class="valid-feedback" style="margin-left: 40px;">
+                                                Merci .
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex justify-content-end">                                                    
+                                            <small><a href="#">Renvoyer le Code d'Activation ?</a></small>
+                                        </div>
+
+                                        <!-- Button -->
+                                        <div class="text-center">
+                                            <button type="submit" class="btn btn-outline-success waves-effect"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp; Register</button>
+                                        </div>
+                                        
+                                        <!-- Social register -->
+                                        <hr>
+                                        <div class="d-flex justify-content-end">
+                                            <p>Se Connecter avec un seul Click
+                                                <a class="fb-ic ml-2 mr-2" role="button"><i class="fa fa-lg fa-facebook"></i> Facebook</a>
+                                                <a class="gplus-ic mr-2" role="button"><i class="fa fa-lg fa-google-plus"></i> Google</a>
+                                            </p>
+                                        </div>
+
+                                    </form> 
+                                    <!-- Material input -->    
+
+                                </div>
+                                <!-- Card content -->
+
+                            </div>
+                            <!-- Card -->
+
+                        </div>
+                        <!-- Card shadow -->    
+
+                    </div>
+                    <!-- Card body -->
+    
+                </div>
+                <!-- card hoverable Register --> 
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Login -->
+<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="ModalLogin" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body p-0">
+                
+                <!-- card hoverable Login -->
+                <div class="card hoverable">
+        
+                    <h5 class="card-header white-text text-center default-color-dark font-weight-bold text-uppercase py-4"><i class="fa fa-sign-in" aria-hidden="true"></i> &nbsp;&nbsp; Login</h5>
+            
+                    <!-- Card body -->
+                    <div class="card-body">
+
+                        <!-- Card shadow -->
+                        <div class="z-depth-5">
+
+                            <!-- Card -->
+                            <div class="card">
+
+                                <!-- Card content -->
+                                <div class="card-body">
+
+                                    <!-- Material input -->
+                                    <form class="needs-validation" action="/user/login" method="post"  novalidate>
+
+                                        <!-- Email -->
+                                        <div class="md-form">
+                                            <i class="fa fa-envelope prefix"></i>
+                                            <label for="email">Email</label>
+                                            <input type="email" name="email" class="form-control" required>
+                                            <div class="invalid-feedback" style="margin-left: 40px; font-size: 13px;">
+                                                S'il vous plaît ajouter un Email .
+                                                </div>
+                                            <div class="valid-feedback" style="margin-left: 40px;">
+                                                Merci .
+                                            </div>
+                                        </div>
+
+                                        <!-- Password -->
+                                        <div class="md-form mb-2">
+                                            <i class="fa fa-lock prefix"></i>
+                                            <input type="password" name="password" class="form-control" required>
+                                            <label for="password">Mot de Passe</label>
+                                            <div class="invalid-feedback" style="margin-left: 40px; font-size: 13px;">
+                                                S'il vous plaît ajouter un Mot de Passe .
+                                                </div>
+                                            <div class="valid-feedback" style="margin-left: 40px;">
+                                                Merci .
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex justify-content-end">                                                    
+                                            <small><a href="#">Mot de Passe Oublié ?</a></small>
+                                        </div>
+
+                                        <!-- Button -->
+                                        <div class="text-center">
+                                            <button type="submit" class="btn btn-outline-success waves-effect"><i class="fa fa-key" aria-hidden="true"></i>&nbsp; Login</button>
+                                        </div>
+                                        
+                                        <!-- Social register -->
+                                        <hr>
+                                        <div class="d-flex justify-content-end">
+                                            <p>Se Connecter avec un seul Click
+                                                <a class="fb-ic ml-2 mr-2" role="button"><i class="fa fa-lg fa-facebook"></i> Facebook</a>
+                                                <a class="gplus-ic mr-2" role="button"><i class="fa fa-lg fa-google-plus"></i> Google</a>
+                                            </p>
+                                        </div>
+
+                                    </form> 
+                                    <!-- Material input -->    
+
+                                </div>
+                                <!-- Card content -->
+
+                            </div>
+                            <!-- Card -->
+
+                        </div>
+                        <!-- Card shadow -->    
+
+                    </div>
+                    <!-- Card body -->
+    
+                </div>
+                <!-- card hoverable Login --> 
+
+            </div>
+        </div>
+    </div>
+</div>
