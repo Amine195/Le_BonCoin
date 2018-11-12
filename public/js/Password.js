@@ -5,7 +5,7 @@ class Pidie {
         passwordValidation() {
 
             const passValidate = document.querySelector(".password-validation");
-            passValidate.setAttribute("pattern", "(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}");
+            passValidate.setAttribute("pattern", "(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{12,}");
             // passValidate.setAttribute("title", "Doit contenir au moins un chiffre, une lettre majuscule et minuscule et au moins 8 caractères.");
             const passMessage = document.querySelector(".password-message");
 
@@ -24,7 +24,7 @@ class Pidie {
                 passInfo += "<p id=\"password-letter\" class=\"password-invalid\">Une ou plusieurs <b> lettres </ b> minuscules</p>";
                 passInfo += "<p id=\"password-capital\" class=\"password-invalid\">Une ou plusieurs lettres <b> majuscules </ b></p>";
                 passInfo += "<p id=\"password-number\" class=\"password-invalid\">Un ou plusieurs <b> numéros </ b> seulement</p>";
-                passInfo += "<p id=\"password-length\" class=\"password-invalid\">Lettre ou chiffre <b> 8 caractères </ b> minimum</p>";
+                passInfo += "<p id=\"password-length\" class=\"password-invalid\">Lettre ou chiffre <b> 12 caractères </ b> minimum</p>";
                 passMessage.innerHTML = passInfo;
                 
                 const lowerCaseLetters = /[a-z]/g;
@@ -58,7 +58,7 @@ class Pidie {
                 }
 
                 const length = document.getElementById("password-length");
-                if (passValidate.value.length >= 8) {
+                if (passValidate.value.length >= 12) {
                     length.classList.remove("password-invalid");
                     length.classList.add("password-valid");
                 } else {

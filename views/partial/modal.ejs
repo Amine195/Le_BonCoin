@@ -28,9 +28,9 @@
                                         <div class="md-form">
                                             <i class="fa fa-user prefix"></i>
                                             <label for="username">Nom Utilisateur</label>
-                                            <input type="text" name="username" class="form-control" pattern=".{6,}" required>
+                                            <input type="text" name="username" class="form-control" pattern=".{8,}" required>
                                             <div class="invalid-feedback" style="margin-left: 40px; font-size: 13px;">
-                                                Doit Contenir au moin 6 lettre .
+                                                Doit Contenir au moin 8 caractères .
                                                 </div>
                                             <div class="valid-feedback" style="margin-left: 40px;">
                                                 Merci .
@@ -41,9 +41,9 @@
                                         <div class="md-form">
                                             <i class="fa fa-envelope prefix"></i>
                                             <label for="email">Email</label>
-                                            <input type="email" name="email" class="form-control" required>
+                                            <input type="email" name="email" class="form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
                                             <div class="invalid-feedback" style="margin-left: 40px; font-size: 13px;">
-                                                S'il vous plaît ajouter un Email .
+                                                S'il vous plaît ajouter un Email Valid.
                                                 </div>
                                             <div class="valid-feedback" style="margin-left: 40px;">
                                                 Merci .
@@ -71,7 +71,7 @@
                                             <label for="confirm_password">Confirmation Mot de Passe</label>
                                             <input type="password" name="confirm_password" class="form-control" required>
                                             <div class="invalid-feedback" style="margin-left: 40px; font-size: 13px;">
-                                                S'il vous plaît ajouter un Mot de Passe .
+                                                S'il vous plaît ajouter à Nouveau Votre Mot de Passe .
                                                 </div>
                                             <div class="valid-feedback" style="margin-left: 40px;">
                                                 Merci .
@@ -95,7 +95,7 @@
                                     
                                             <!-- Card header -->
                                             <div class="card-header p-0" role="tab" id="heading">
-                                                <a class="collapsed" data-toggle="collapse" data-parent="#accordionRegsiter" href="#collapse"
+                                                <a class="collapsed" data-toggle="collapse" data-parent="#accordionRegsiter" href="#collapseRegister"
                                                 aria-expanded="false" aria-controls="collapse">
                                                 <h6 class="mb-1 float-right">
                                                     <small>Renvoyer Le Code d'Activation</small>
@@ -104,16 +104,16 @@
                                             </div>
                                         
                                             <!-- Card body -->
-                                            <div id="collapse" class="collapse" role="tabpanel" aria-labelledby="heading" data-parent="#accordionRegsiter">
+                                            <div id="collapseRegister" class="collapse" role="tabpanel" aria-labelledby="heading" data-parent="#accordionRegsiter">
                                                 <div class="card-body pt-1 pr-0 ml-3 pb-2">
                                                     <form class="needs-validation" action="/user/login" method="post"  novalidate>
                                                         <div class="input-group">
-                                                            <input type="email" class="form-control" name="email" placeholder="Email" aria-label="Email" aria-describedby="button" required>
+                                                            <input type="email" class="form-control" name="email" placeholder="Email"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" aria-label="Email" aria-describedby="button" required>
                                                             <div class="input-group-append">
                                                                 <button class="btn btn-md btn-outline-success m-0 px-3 py-2 z-depth-0 waves-effect" type="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i> Valider</button>
                                                             </div>
                                                             <div class="invalid-feedback" style="font-size: 13px;">
-                                                                <strong>S'il vous plaît ajouter Email .</strong>
+                                                                <strong>S'il vous plaît ajouter Email Valid.</strong>
                                                                 </div>
                                                             <div class="valid-feedback" style="font-size: 13px;">
                                                                 Merci .
@@ -189,9 +189,9 @@
                                         <div class="md-form">
                                             <i class="fa fa-envelope prefix"></i>
                                             <label for="email">Email</label>
-                                            <input type="email" name="email" class="form-control" required>
+                                            <input type="email" name="email" class="form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
                                             <div class="invalid-feedback" style="margin-left: 40px; font-size: 13px;">
-                                                S'il vous plaît ajouter un Email .
+                                                S'il vous plaît ajouter un Email Valid.
                                             </div>
                                             <div class="valid-feedback" style="margin-left: 40px;">
                                                 Merci .
@@ -227,7 +227,7 @@
                                     
                                             <!-- Card header -->
                                             <div class="card-header p-0" role="tab" id="heading">
-                                                <a class="collapsed" data-toggle="collapse" data-parent="#accordionLogin" href="#collapse"
+                                                <a class="collapsed" data-toggle="collapse" data-parent="#accordionLogin" href="#collapseLogin"
                                                 aria-expanded="false" aria-controls="collapse">
                                                 <h6 class="mb-1 float-right">
                                                     <small>Mot de Passe Oublié ?</small>
@@ -236,16 +236,16 @@
                                             </div>
                                         
                                             <!-- Card body -->
-                                            <div id="collapse" class="collapse" role="tabpanel" aria-labelledby="heading" data-parent="#accordionLogin">
+                                            <div id="collapseLogin" class="collapse" role="tabpanel" aria-labelledby="heading" data-parent="#accordionLogin">
                                                 <div class="card-body pt-1 pr-0 ml-3 pb-2">
                                                     <form class="needs-validation" action="/user/login" method="post"  novalidate>
                                                         <div class="input-group">
-                                                            <input type="email" class="form-control" name="email" placeholder="Email" aria-label="Email" aria-describedby="button" required>
+                                                            <input type="email" class="form-control" name="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" aria-label="Email" aria-describedby="button" required>
                                                             <div class="input-group-append">
                                                                 <button class="btn btn-md btn-outline-success m-0 px-3 py-2 z-depth-0 waves-effect" type="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i> Valider</button>
                                                             </div>
                                                             <div class="invalid-feedback" style="font-size: 13px;">
-                                                                <strong>S'il vous plaît ajouter un Mot de Passe .</strong>
+                                                                <strong>S'il vous plaît ajouter Email Valid .</strong>
                                                             </div>
                                                             <div class="valid-feedback" style="font-size: 13px;">
                                                                 Merci .
