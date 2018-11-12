@@ -6,7 +6,7 @@ class Pidie {
 
             const passValidate = document.querySelector(".password-validation");
             passValidate.setAttribute("pattern", "(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{12,}");
-            passValidate.setAttribute("title", "* Doit contenir au moins un chiffre, une lettre majuscule et minuscule et au moins 8 caractères.");
+            passValidate.setAttribute("title", "* Doit contenir au moins un chiffre, une lettre majuscule et minuscule et au moins 12 caractères.");
             const passMessage = document.querySelector(".password-message");
 
             if (passMessage) {
