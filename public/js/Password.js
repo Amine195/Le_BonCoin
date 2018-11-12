@@ -77,10 +77,10 @@ class Pidie {
             passwordToggle.addEventListener('click', function(){
                 if(passwordInput.type === 'password'){
                     passwordInput.type = 'text';
-                    passwordToggle.innerHTML = '<i class="fa fa-eye-slash grey-text fa-lg" aria-hidden="true"></i> Invisible';
+                    passwordToggle.innerHTML = '<i class="fa fa-eye-slash fa-lg" aria-hidden="true"></i> Invisible';
                 } else{
                     passwordInput.type = 'password';
-                    passwordToggle.innerHTML = '<i class="fa fa-eye grey-text fa-lg" aria-hidden="true"></i> Visible';
+                    passwordToggle.innerHTML = '<i class="fa fa-eye fa-lg" aria-hidden="true"></i> Visible';
                 }
             });
         }
