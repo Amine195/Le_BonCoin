@@ -37,6 +37,21 @@ app.get("/", (req, res) => {
   });
 });
 
+app.get("/products", (req, res) => {
+  res.render("products", {
+    path: "/products",
+    PageTitle: "Products Page"
+  });
+});
+
+app.get("/shops", (req, res) => {
+  res.render("shops", {
+    path: "/shops",
+    PageTitle: "Shops Page"
+  });
+});
+
+
 app.use("/product", productRoutes);
 app.use("/user", userRoutes);
 

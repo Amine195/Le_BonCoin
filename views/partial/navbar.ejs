@@ -1,5 +1,5 @@
 <!--Main Navigation-->
-<header class="mb-5">
+<header class="mb-4">
 
     <!--Navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark special-color-dark fixed-top scrolling-navbar">
@@ -21,8 +21,8 @@
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item <%= path === '/' ? 'active' : '' %>"><a class="nav-link" href="/"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-tachometer" aria-hidden="true"></i> Dashboard</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-product-hunt" aria-hidden="true"></i> Products</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i> Shops</a></li>
+                    <li class="nav-item <%= path === '/products' ? 'active' : '' %>"><a class="nav-link" href="/products"><i class="fa fa-product-hunt" aria-hidden="true"></i> Products</a></li>
+                    <li class="nav-item <%= path === '/shops' ? 'active' : '' %>"><a class="nav-link" href="/shops"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i> Shops</a></li>
                 </ul>
                 <!-- Links left -->
 
