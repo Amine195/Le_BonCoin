@@ -1,12 +1,12 @@
     <!-- Head -->
     <%- include('../partial/head.ejs') %>
+
     <style>
-        body {
-            background: #bdc3c7;  /* fallback for old browsers */
-            background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
-            background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        .md-accordion .card, .md-accordion .card:first-of-type, .md-accordion .card:not(:first-of-type):not(:last-of-type){
+            border-bottom: 0px solid #e0e0e0;
         }
     </style>
+    
 </head>
 
 <body>
@@ -26,40 +26,12 @@
 
     </main>
 
+    <!-- Modal -->
+    <%- include('../partial/modal.ejs') %>
     <!-- Footer -->
-    <footer class="page-footer font-small special-color-dark fixed-bottom">
-
-        <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">© 2018 Copyright:
-        <a href="https://mdbootstrap.com/education/bootstrap/"> Mohammed Amine GZL</a>
-        </div>
-        <!-- Copyright -->
-    
-    </footer>
-    <!-- Footer -->
-
+    <%- include('../partial/footer.ejs') %>
     <!-- Script -->
     <%- include('../partial/script.ejs') %>
-
-    <!-- Example starter JavaScript for disabling form submissions if there are invalid fields -->
-    <script>
-        (function () {
-        window.addEventListener("load", () => {
-            // Fetch all the forms we want to apply custom Bootstrap validation styles to
-            const forms = document.getElementsByClassName("needs-validation");
-            // Loop over them and prevent submission
-            const validation = Array.prototype.filter.call(forms, (form) => {
-            form.addEventListener("submit", (event) => {
-                if (form.checkValidity() === false) {
-                event.preventDefault();
-                event.stopPropagation();
-                }
-                form.classList.add("was-validated");
-            }, false);
-            });
-        }, false);
-        }());
-    </script>
 
 </body>
 
