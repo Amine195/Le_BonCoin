@@ -1,0 +1,100 @@
+    <!-- Head -->
+    <%- include('partial/head.ejs') %>
+
+    <style>
+        .md-accordion .card, .md-accordion .card:first-of-type, .md-accordion .card:not(:first-of-type):not(:last-of-type){
+            border-bottom: 0px solid #e0e0e0;
+        }
+        .card-img-top {
+            width: 115%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <%- include('partial/navbar.ejs') %>
+
+    <main>
+        <br><br><br>
+        <!-- Container -->
+        <div class="container">
+
+            <!-- Row -->
+            <div class="row">
+
+                <!-- Div 1 -->
+                <div class="col-xl-4 col-lg-4 mb-3">
+
+                    <!-- Panel -->
+                    <div class="card">
+
+                        <!-- Header -->
+                        <div class="card-header">
+                            Featured
+                        </div>
+
+                        <!-- Body -->
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Cras justo odio</li>
+                            <li class="list-group-item">Dapibus ac facilisis in</li>
+                            <li class="list-group-item">Vestibulum at eros</li>
+                        </ul>
+                        
+                    </div>
+                    
+                </div>
+                <!-- Div 1 -->
+
+                <!-- Div 2 -->
+                <div class="col-xl-8 col-lg-8">
+
+                    <!-- Row Div 2 -->
+                    <div class="row">
+
+                        <!-- Div -->
+                        <div class="col-xl-12 col-lg-6 col-md-6 col-sm-6 mb-3">
+                            <%- include('partial/card_grid_shop.ejs') %>
+                        </div>
+
+                        <!-- Div -->
+                        <div class="col-xl-12 col-lg-6 col-md-6 col-sm-6 mb-3">
+                            <%- include('partial/card_grid_shop.ejs') %>
+                        </div>
+
+                        <!-- Div -->
+                        <div class="col-xl-12 col-lg-6 col-md-6 col-sm-6 mb-3">
+                            <%- include('partial/card_grid_shop.ejs') %>
+                        </div>
+
+                        <!-- Div -->
+                        <div class="col-xl-12 col-lg-6 col-md-6 col-sm-6 mb-3">
+                            <%- include('partial/card_grid_shop.ejs') %>
+                        </div>
+
+                    </div>
+                    <!-- Row Div 2 -->
+
+                </div>
+                <!-- Div 2 -->
+
+            </div>
+            <!-- Row -->
+
+        </div>
+        <!-- Container -->
+
+    </main>
+    <br><br><br>
+
+    <!-- Modal -->
+    <%- include('partial/modal.ejs') %>
+    <!-- Footer -->
+    <%- include('partial/footer.ejs') %>
+    <!-- Script -->
+    <%- include('partial/script.ejs') %>
+
+</body>
+
+</html>
