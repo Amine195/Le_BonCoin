@@ -33,7 +33,7 @@
                                             <i class="fa fa-user prefix"></i>
                                             <label for="username">Nom Utilisateur</label>
                                             <input type="text" name="username" class="form-control" pattern=".{8,}" required>
-                                            <div class="invalid-feedback animated fadeInRight" style="margin-left: 40px; font-size: 13px;">
+                                            <div class="col-xl-12 col-lg-12 col-md-10 col-sm-10 col-10 invalid-feedback animated fadeInRight p-0" style="margin-left: 40px; font-size: 13px;">
                                                 Doit Contenir au moin 8 caractères .
                                                 </div>
                                             <div class="valid-feedback animated fadeInRight" style="margin-left: 40px;">
@@ -46,7 +46,7 @@
                                             <i class="fa fa-envelope prefix"></i>
                                             <label for="email">Email</label>
                                             <input type="email" name="email" class="form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
-                                            <div class="invalid-feedback animated fadeInRight" style="margin-left: 40px; font-size: 13px;">
+                                            <div class="col-xl-12 col-lg-12 col-md-10 col-sm-10 col-10 invalid-feedback animated fadeInRight p-0" style="margin-left: 40px; font-size: 13px;">
                                                 S'il vous plaît ajouter un Email Valid.
                                                 </div>
                                             <div class="valid-feedback animated fadeInRight" style="margin-left: 40px;">
@@ -59,7 +59,7 @@
                                             <i class="fa fa-lock prefix"></i>
                                             <label for="password">Mot de Passe</label>
                                             <input type="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" class="form-control mb-0" required>
-                                            <div class="invalid-feedback animated fadeInRight" style="margin-left: 40px; font-size: 13px;">
+                                            <div class="col-xl-12 col-lg-12 col-md-10 col-sm-10 col-10 invalid-feedback animated fadeInRight p-0" style="margin-left: 40px; font-size: 13px;">
                                                 Doit contenir au moins un chiffre, une lettre majuscule et minuscule et au moins 8 caractères .
                                             </div>
                                             <div class="valid-feedback animated fadeInRight" style="margin-left: 40px;">
@@ -72,7 +72,7 @@
                                             <i class="fa fa-lock prefix"></i>
                                             <label for="confirm_password">Confirmation Mot de Passe</label>
                                             <input type="password" name="confirm_password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" class="form-control" required>
-                                            <div class="invalid-feedback animated fadeInRight" style="margin-left: 40px; font-size: 13px;">
+                                            <div class="col-xl-12 col-lg-12 col-md-10 col-sm-10 col-10 invalid-feedback animated fadeInRight p-0" style="margin-left: 40px; font-size: 13px;">
                                                 S'il vous plaît ajouter à Nouveau Votre Mot de Passe .
                                             </div>
                                             <div class="valid-feedback animated fadeInRight" style="margin-left: 40px;">
@@ -90,14 +90,14 @@
                                     
                                     <!-- Mot de Passe Oublie -->    
                                     <!--Accordion wrapper-->
-                                    <div class="accordion md-accordion pb-0" id="accordionRegsiter" role="tablist" aria-multiselectable="true">
+                                    <div class="accordion md-accordion d-none d-sm-none d-md-none d-lg-block pb-0" id="accordionRegsiterlg" role="tablist" aria-multiselectable="true">
 
                                         <!-- Accordion card -->
                                         <div class="card">
                                     
                                             <!-- Card header -->
                                             <div class="card-header p-0" role="tab" id="heading">
-                                                <a class="collapsed" data-toggle="collapse" data-parent="#accordionRegsiter" href="#collapseRegister"
+                                                <a class="collapsed" data-toggle="collapse" data-parent="#accordionRegsiterlg" href="#collapseRegisterlg"
                                                 aria-expanded="false" aria-controls="collapse">
                                                 <h6 class="mb-1 float-right">
                                                     <small>Renvoyer Le Code d'Activation</small>
@@ -106,7 +106,7 @@
                                             </div>
                                         
                                             <!-- Card body -->
-                                            <div id="collapseRegister" class="collapse" role="tabpanel" aria-labelledby="heading" data-parent="#accordionRegsiter">
+                                            <div id="collapseRegisterlg" class="collapse" role="tabpanel" aria-labelledby="heading" data-parent="#accordionRegsiterlg">
                                                 <div class="card-body pt-1 pr-0 ml-3 pb-2">
                                                     <form class="needs-validation" action="/user/login" method="post"  novalidate>
                                                         <div class="input-group">
@@ -129,15 +129,60 @@
                                         <!-- Accordion card -->
                                                 
                                     </div>
+                                    <hr class="d-none d-sm-none d-md-none d-lg-block mb-2 mt-1" style="margin-left: 35px;">
+                                    <!--Accordion wrapper-->
+
+                                    <!-- Mot de Passe Oublie -->    
+                                    <!--Accordion wrapper-->
+                                    <div class="accordion md-accordion d-block d-sm-block d-md-block d-lg-none pb-0 mt-2" id="accordionRegsitersm" role="tablist" aria-multiselectable="true">
+
+                                        <!-- Accordion card -->
+                                        <div class="card">
+                                    
+                                            <!-- Card header -->
+                                            <div class="card-header p-0" role="tab" id="heading">
+                                                <a class="collapsed" data-toggle="collapse" data-parent="#accordionRegsitersm" href="#collapseRegistersm"
+                                                aria-expanded="false" aria-controls="collapse">
+                                                <h6 class="mb-1 float-right">
+                                                    <small>Renvoyer Le Code d'Activation</small>
+                                                </h6>
+                                                </a>
+                                            </div>
+                                        
+                                            <!-- Card body -->
+                                            <div id="collapseRegistersm" class="collapse" role="tabpanel" aria-labelledby="heading" data-parent="#accordionRegsitersm">
+                                                <div class="card-body pt-1 p-0 pb-2">
+                                                    <form class="needs-validation" action="/user/login" method="post"  novalidate>
+                                                        <div class="input-group">
+                                                            <input type="email" class="form-control" name="email" placeholder="Email"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" aria-label="Email" aria-describedby="button" required>
+                                                            <div class="input-group-append">
+                                                                <button class="btn btn-md btn-outline-success m-0 px-3 py-2 z-depth-0 waves-effect" type="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i> Valider</button>
+                                                            </div>
+                                                            <div class="invalid-feedback animated fadeInRight" style="font-size: 13px;">
+                                                                <strong>S'il vous plaît ajouter Email Valid.</strong>
+                                                                </div>
+                                                            <div class="valid-feedback animated fadeInRight" style="font-size: 13px;">
+                                                                Merci .
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                    
+                                        </div>
+                                        <!-- Accordion card -->
+                                                
+                                    </div>
+                                    <hr class="d-block d-sm-block d-md-block d-lg-none mb-2 mt-1">
                                     <!--Accordion wrapper-->
 
                                     <!-- Social register -->
-                                    <hr class="mb-3 mt-1" style="margin-left: 35px;">
                                     <div class="d-flex justify-content-end">
                                         <p class="mb-0">
-                                            <small>Se Connecter avec un seul Click</small>
-                                            <a class="fb-ic ml-2 mr-2" role="button"><i class="fa fa-lg fa-facebook"></i> Facebook</a>
-                                            <a class="gplus-ic mr-2" role="button"><i class="fa fa-lg fa-google-plus"></i> Google</a>
+                                            <small class="font-weight-bold">Se Connecter Avec :</small>
+                                            <a class="fb-ic ml-1 mr-1" role="button"><i class="fa fa-lg fa-facebook"></i> <small class="font-weight-bold">Facebook</small></a>
+                                            <small class="font-weight-bold">Ou</small>
+                                            <a class="gplus-ic ml-1" role="button"><i class="fa fa-lg fa-google-plus"></i> <small class="font-weight-bold">Google</small></a>
                                         </p>
                                     </div>
 
@@ -196,7 +241,7 @@
                                             <i class="fa fa-envelope prefix"></i>
                                             <label for="email">Email</label>
                                             <input type="email" name="email" class="form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
-                                            <div class="invalid-feedback animated fadeInRight" style="margin-left: 40px; font-size: 13px;">
+                                            <div class="col-xl-12 col-lg-12 col-md-10 col-sm-10 col-10 invalid-feedback animated fadeInRight p-0" style="margin-left: 40px; font-size: 13px;">
                                                 S'il vous plaît ajouter un Email Valid.
                                             </div>
                                             <div class="valid-feedback animated fadeInRight" style="margin-left: 40px;">
@@ -209,7 +254,7 @@
                                             <i class="fa fa-lock prefix"></i>
                                             <label for="password">Mot de Passe</label>
                                             <input type="password" name="password" class="form-control" required>
-                                            <div class="invalid-feedback animated fadeInRight" style="margin-left: 40px; font-size: 13px;">
+                                            <div class="col-xl-12 col-lg-12 col-md-10 col-sm-10 col-10 invalid-feedback animated fadeInRight p-0" style="margin-left: 40px; font-size: 13px;">
                                                 S'il vous plaît ajouter un Mot de Passe .
                                             </div>
                                             <div class="valid-feedback animated fadeInRight" style="margin-left: 40px;">
@@ -226,14 +271,14 @@
 
                                     <!-- Mot de Passe Oublie -->    
                                     <!--Accordion wrapper-->
-                                    <div class="accordion md-accordion pb-0" id="accordionLogin" role="tablist" aria-multiselectable="true">
+                                    <div class="accordion md-accordion d-none d-sm-none d-md-none d-lg-block pb-0" id="accordionLoginlg" role="tablist" aria-multiselectable="true">
 
                                         <!-- Accordion card -->
                                         <div class="card">
                                     
                                             <!-- Card header -->
                                             <div class="card-header p-0" role="tab" id="heading">
-                                                <a class="collapsed" data-toggle="collapse" data-parent="#accordionLogin" href="#collapseLogin"
+                                                <a class="collapsed" data-toggle="collapse" data-parent="#accordionLoginlg" href="#collapseLoginlg"
                                                 aria-expanded="false" aria-controls="collapse">
                                                 <h6 class="mb-1 float-right">
                                                     <small>Mot de Passe Oublié ?</small>
@@ -242,7 +287,7 @@
                                             </div>
                                         
                                             <!-- Card body -->
-                                            <div id="collapseLogin" class="collapse" role="tabpanel" aria-labelledby="heading" data-parent="#accordionLogin">
+                                            <div id="collapseLoginlg" class="collapse" role="tabpanel" aria-labelledby="heading" data-parent="#accordionLoginlg">
                                                 <div class="card-body pt-1 pr-0 ml-3 pb-2">
                                                     <form class="needs-validation" action="/user/login" method="post"  novalidate>
                                                         <div class="input-group">
@@ -265,15 +310,60 @@
                                         <!-- Accordion card -->
                                             
                                     </div>
+                                    <hr class="d-none d-sm-none d-md-none d-lg-block mb-2 mt-1" style="margin-left: 35px;">
+                                    <!--Accordion wrapper-->
+
+                                    <!-- Mot de Passe Oublie -->    
+                                    <!--Accordion wrapper-->
+                                    <div class="accordion md-accordion d-block d-sm-block d-md-block d-lg-none pb-0 mt-2" id="accordionLoginsm" role="tablist" aria-multiselectable="true">
+
+                                        <!-- Accordion card -->
+                                        <div class="card">
+                                    
+                                            <!-- Card header -->
+                                            <div class="card-header p-0" role="tab" id="heading">
+                                                <a class="collapsed" data-toggle="collapse" data-parent="#accordionLoginsm" href="#collapseLoginsm"
+                                                aria-expanded="false" aria-controls="collapse">
+                                                <h6 class="mb-1 float-right">
+                                                    <small>Renvoyer Le Code d'Activation</small>
+                                                </h6>
+                                                </a>
+                                            </div>
+                                        
+                                            <!-- Card body -->
+                                            <div id="collapseLoginsm" class="collapse" role="tabpanel" aria-labelledby="heading" data-parent="#accordionLoginsm">
+                                                <div class="card-body pt-1 p-0 pb-2">
+                                                    <form class="needs-validation" action="/user/login" method="post"  novalidate>
+                                                        <div class="input-group">
+                                                            <input type="email" class="form-control" name="email" placeholder="Email"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" aria-label="Email" aria-describedby="button" required>
+                                                            <div class="input-group-append">
+                                                                <button class="btn btn-md btn-outline-success m-0 px-3 py-2 z-depth-0 waves-effect" type="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i> Valider</button>
+                                                            </div>
+                                                            <div class="invalid-feedback animated fadeInRight" style="font-size: 13px;">
+                                                                <strong>S'il vous plaît ajouter Email Valid.</strong>
+                                                                </div>
+                                                            <div class="valid-feedback animated fadeInRight" style="font-size: 13px;">
+                                                                Merci .
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                    
+                                        </div>
+                                        <!-- Accordion card -->
+                                                
+                                    </div>
+                                    <hr class="d-block d-sm-block d-md-block d-lg-none mb-2 mt-1">
                                     <!--Accordion wrapper-->
 
                                     <!-- Social register -->
-                                    <hr class="mb-3 mt-1" style="margin-left: 35px;">
                                     <div class="d-flex justify-content-end">
                                         <p class="mb-0">
-                                            <small>Se Connecter avec un seul Click</small>
-                                            <a class="fb-ic ml-2 mr-2" role="button"><i class="fa fa-lg fa-facebook"></i> Facebook</a>
-                                            <a class="gplus-ic mr-2" role="button"><i class="fa fa-lg fa-google-plus"></i> Google</a>
+                                            <small class="font-weight-bold">Se Connecter Avec :</small>
+                                            <a class="fb-ic ml-1 mr-1" role="button"><i class="fa fa-lg fa-facebook"></i> <small class="font-weight-bold">Facebook</small></a>
+                                            <small class="font-weight-bold">Ou</small>
+                                            <a class="gplus-ic ml-1" role="button"><i class="fa fa-lg fa-google-plus"></i> <small class="font-weight-bold">Google</small></a>
                                         </p>
                                     </div>
 
