@@ -10,21 +10,29 @@
 </head>
 
 <body>
-    <!-- Navbar -->
-    <%- include('partial/navbar.ejs') %>
 
+    <!-- HEADER -->
+    <header class="mb-4">
+        <%- include('partial/navbar.ejs') %> <!-- Navbar -->
+    </header>
+
+    <!-- MAIN -->
     <main>
         <br><br><br>
-        <div class="container">
+        <section class="container index">
             <h1 class="mt-5 ml-5">hello Word</h1>
-        </div>
+        </section>
         <br><br><br>
     </main>
 
-    <!-- Modal -->
+    <!-- MODAL -->
     <%- include('partial/modal.ejs') %>
-    <!-- Footer -->
-    <%- include('partial/footer.ejs') %>
+
+    <!-- FOOTER -->
+    <footer class="page-footer font-small special-color-dark">
+        <%- include('partial/footer.ejs') %>
+    </footer>
+
     <!-- Script -->
     <%- include('partial/script.ejs') %>
 

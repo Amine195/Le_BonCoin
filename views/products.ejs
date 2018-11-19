@@ -16,19 +16,23 @@
 </head>
 
 <body>
-    <!-- Navbar -->
-    <%- include('partial/navbar.ejs') %>
 
+    <!-- HEADER -->
+    <header class="mb-4">
+        <%- include('partial/navbar.ejs') %> <!-- Navbar -->
+    </header>
+
+    <!-- MAIN -->
     <main>
         <br><br><br>
         <!-- Container -->
-        <div class="container">
+        <section class="container products">
 
             <!-- Row -->
             <div class="row">
 
-                <!-- Div 1 -->
-                <div class="col-xl-8 col-lg-8">
+                <!-- article -->
+                <article class="col-xl-8 col-lg-8">
 
                     <h5 class="font-weight-bold mt-0 ml-1"><strong>LATESTS NEWS</strong></h5>
                     <hr class="red title-hr mt-0">
@@ -60,30 +64,34 @@
                     <!-- Row Div 1 -->
                     <br>
 
-                </div>
-                <!-- Div 1 -->
+                </article>
+                <!-- article -->
 
-                <!-- Div 2 -->
-                <div class="col-xl-4 col-lg-4 mb-3">
+                <!-- aside -->
+                <aside class="col-xl-4 col-lg-4 mb-3">
                     <%- include('partial/categorie.ejs') %>
                     <br>
                     <%- include('partial/ville.ejs') %>
-                </div>
-                <!-- Div 2 -->
+                </aside>
+                <!-- aside -->
 
             </div>
             <!-- Row -->
 
-        </div>
+        </section>
         <!-- Container -->
 
     </main>
     <br><br><br>
 
-    <!-- Modal -->
+    <!-- MODAL -->
     <%- include('partial/modal.ejs') %>
-    <!-- Footer -->
-    <%- include('partial/footer.ejs') %>
+
+    <!-- FOOTER -->
+    <footer class="page-footer font-small special-color-dark">
+        <%- include('partial/footer.ejs') %>
+    </footer>
+
     <!-- Script -->
     <%- include('partial/script.ejs') %>
 

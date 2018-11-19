@@ -1,47 +1,41 @@
-<!--Main Navigation-->
-<header class="mb-4">
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark special-color-dark fixed-top scrolling-navbar">
 
-    <!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark special-color-dark fixed-top scrolling-navbar">
+    <div class="container">
 
-        <div class="container">
+        <!-- Navbar brand -->
+        <a class="navbar-brand" href="#">Navbar</a>
 
-            <!-- Navbar brand -->
-            <a class="navbar-brand" href="#">Navbar</a>
+        <!-- Collapse button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <!-- Collapse button -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <!-- Collapsible content -->
+        <div class="collapse navbar-collapse" id="basicExampleNav">
 
-            <!-- Collapsible content -->
-            <div class="collapse navbar-collapse" id="basicExampleNav">
+            <!-- Links left -->
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item <%= path === '/' ? 'active' : '' %>"><a class="nav-link" href="/"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-tachometer" aria-hidden="true"></i> Dashboard</a></li>
+                <li class="nav-item <%= path === '/products' ? 'active' : '' %>"><a class="nav-link" href="/products"><i class="fa fa-product-hunt" aria-hidden="true"></i> Products</a></li>
+                <li class="nav-item <%= path === '/shops' ? 'active' : '' %>"><a class="nav-link" href="/shops"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i> Shops</a></li>
+            </ul>
+            <!-- Links left -->
 
-                <!-- Links left -->
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item <%= path === '/' ? 'active' : '' %>"><a class="nav-link" href="/"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-tachometer" aria-hidden="true"></i> Dashboard</a></li>
-                    <li class="nav-item <%= path === '/products' ? 'active' : '' %>"><a class="nav-link" href="/products"><i class="fa fa-product-hunt" aria-hidden="true"></i> Products</a></li>
-                    <li class="nav-item <%= path === '/shops' ? 'active' : '' %>"><a class="nav-link" href="/shops"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i> Shops</a></li>
-                </ul>
-                <!-- Links left -->
-
-                <!-- Links right -->
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" data-toggle="modal" data-target="#register"><i class="fa fa-user-plus" aria-hidden="true"></i> Register</a></li>
-                    <li class="nav-item"><a class="nav-link" data-toggle="modal" data-target="#login"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a></li>
-                    <li class="nav-item <%= path === '/profile' ? 'active' : '' %>"><a class="nav-link" href="/user/profile"><i class="fa fa-user-o" aria-hidden="true"></i> Profile</a></li>
-                    <li class="nav-item"><a class="nav-link" data-toggle="modal" data-target="#logout"><i class="fa fa-power-off" aria-hidden="true"></i> Deconnecter</a></li>
-                </ul>
-                <!-- Links right -->
-
-            </div>
-            <!-- Collapsible content -->
+            <!-- Links right -->
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" data-toggle="modal" data-target="#register"><i class="fa fa-user-plus" aria-hidden="true"></i> Register</a></li>
+                <li class="nav-item"><a class="nav-link" data-toggle="modal" data-target="#login"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a></li>
+                <li class="nav-item <%= path === '/profile' ? 'active' : '' %>"><a class="nav-link" href="/user/profile"><i class="fa fa-user-o" aria-hidden="true"></i> Profile</a></li>
+                <li class="nav-item"><a class="nav-link" data-toggle="modal" data-target="#logout"><i class="fa fa-power-off" aria-hidden="true"></i> Deconnecter</a></li>
+            </ul>
+            <!-- Links right -->
 
         </div>
+        <!-- Collapsible content -->
 
-    </nav>
-    <!--/.Navbar-->
+    </div>
 
-</header>
-<!--Main Navigation-->
+</nav>
+<!--/.Navbar-->
