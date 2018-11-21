@@ -33,11 +33,9 @@
                                             <i class="fa fa-user prefix"></i>
                                             <label for="username">Nom Utilisateur</label>
                                             <input type="text" name="username" class="form-control" pattern=".{8,}" required>
-                                            <div class="col-xl-12 col-lg-12 col-md-10 col-sm-10 col-10 invalid-feedback animated fadeInRight p-0" style="margin-left: 40px; font-size: 13px;">
-                                                Doit Contenir au moin 8 caractères .
-                                                </div>
-                                            <div class="valid-feedback animated fadeInRight" style="margin-left: 40px;">
-                                                Merci .
+                                            <small class="form-text text-muted">Doit contenir au moins 8 caractères .</small>
+                                            <div class="invalid-feedback animated fadeInRight p-0" style="margin-left: 40px;">
+                                                Incorrect !
                                             </div>
                                         </div>
                 
@@ -46,11 +44,8 @@
                                             <i class="fa fa-envelope prefix"></i>
                                             <label for="email">Email</label>
                                             <input type="email" name="email" class="form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
-                                            <div class="col-xl-12 col-lg-12 col-md-10 col-sm-10 col-10 invalid-feedback animated fadeInRight p-0" style="margin-left: 40px; font-size: 13px;">
-                                                S'il vous plaît ajouter un Email Valid.
-                                                </div>
-                                            <div class="valid-feedback animated fadeInRight" style="margin-left: 40px;">
-                                                Merci .
+                                            <div class="invalid-feedback animated fadeInRight p-0" style="margin-left: 40px;">
+                                                Incorrect !
                                             </div>
                                         </div>
 
@@ -58,33 +53,21 @@
                                         <div class="md-form">
                                             <i class="fa fa-lock prefix"></i>
                                             <label for="password">Mot de Passe</label>
-                                            <input type="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" class="form-control mb-0" required>
-                                            <div class="col-xl-12 col-lg-12 col-md-10 col-sm-10 col-10 invalid-feedback animated fadeInRight p-0" style="margin-left: 40px; font-size: 13px;">
-                                                Doit contenir au moins un chiffre, une lettre majuscule et minuscule et au moins 8 caractères .
-                                            </div>
-                                            <div class="valid-feedback animated fadeInRight" style="margin-left: 40px;">
-                                                Merci .
+                                            <input type="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" class="form-control" required>
+                                            <small class="form-text text-muted">Doit contenir au moins un chiffre, une lettre majuscule et minuscule et au moins 8 caractères .</small>
+                                            <div class="invalid-feedback animated fadeInRight" style="margin-left: 40px;">
+                                                Incorrect !
                                             </div>
                                         </div>
 
                                         <!-- Password Confirmation -->
-                                        <div class="md-form mb-1">
+                                        <div class="md-form mb-3">
                                             <i class="fa fa-lock prefix"></i>
                                             <label for="confirm_password">Confirmation Mot de Passe</label>
                                             <input type="password" name="confirm_password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" class="form-control" required>
-                                            <div class="col-xl-12 col-lg-12 col-md-10 col-sm-10 col-10 invalid-feedback animated fadeInRight p-0" style="margin-left: 40px; font-size: 13px;">
-                                                S'il vous plaît ajouter à Nouveau Votre Mot de Passe .
+                                            <div class="invalid-feedback animated fadeInRight p-0" style="margin-left: 40px; font-size: 13px;">
+                                                Incorrect !
                                             </div>
-                                            <div class="valid-feedback animated fadeInRight" style="margin-left: 40px;">
-                                                Merci .
-                                            </div>
-                                            <!-- Collapse buttons -->
-                                            <div class="text-left mt-2">
-                                                <a class="btn btn-link font-weight-bold py-0 my-0" data-toggle="collapse" href="#collapseRegister" aria-expanded="false" aria-controls="collapseRegister" style="color:#007bff!important; font-size: 0.7rem;">
-                                                    <i class="fa fa-angle-double-right" aria-hidden="true"></i> &nbsp; Renvoyer le Code d'Activation !
-                                                </a>
-                                            </div>
-                                            <!-- / Collapse buttons --> 
                                         </div>
 
                                         <!-- Button -->
@@ -94,27 +77,6 @@
 
                                     </form> 
                                     <!-- Material input -->   
-                                    
-                                    <!-- Renvoyer Code -->   
-                                    <!-- Collapsible element -->
-                                    <div class="collapse" id="collapseRegister">
-                                        <hr>
-                                        <form class="needs-validation" action="/user/login" method="post"  novalidate>
-                                            <div class="input-group">
-                                                <input type="email" class="form-control" name="email" placeholder="Email"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" aria-label="Email" aria-describedby="button" required>
-                                                <div class="input-group-append">
-                                                    <button class="btn btn-md btn-outline-success m-0 px-3 py-2 z-depth-0 waves-effect" type="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i> Valider</button>
-                                                </div>
-                                                <div class="invalid-feedback animated fadeInRight" style="font-size: 13px;">
-                                                    S'il vous plaît ajouter Email Valid.
-                                                </div>
-                                                <div class="valid-feedback animated fadeInRight" style="font-size: 13px;">
-                                                    Merci .
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                    <!-- / Collapsible element -->
 
                                 </div>
                                 <!-- Card content -->
@@ -171,32 +133,19 @@
                                             <i class="fa fa-envelope prefix"></i>
                                             <label for="email">Email</label>
                                             <input type="email" name="email" class="form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
-                                            <div class="col-xl-12 col-lg-12 col-md-10 col-sm-10 col-10 invalid-feedback animated fadeInRight p-0" style="margin-left: 40px; font-size: 13px;">
-                                                S'il vous plaît ajouter un Email Valid.
-                                            </div>
-                                            <div class="valid-feedback animated fadeInRight" style="margin-left: 40px;">
-                                                Merci .
+                                            <div class="invalid-feedback animated fadeInRight" style="margin-left: 40px;">
+                                                Incorrect !
                                             </div>
                                         </div>
 
                                         <!-- Password -->
-                                        <div class="md-form mb-1">
+                                        <div class="md-form mb-3">
                                             <i class="fa fa-lock prefix"></i>
                                             <label for="password">Mot de Passe</label>
                                             <input type="password" name="password" class="form-control mb-0" required>
-                                            <div class="col-xl-12 col-lg-12 col-md-10 col-sm-10 col-10 invalid-feedback animated fadeInRight p-0" style="margin-left: 40px; font-size: 13px;">
-                                                S'il vous plaît ajouter un Mot de Passe .
+                                            <div class="invalid-feedback animated fadeInRight" style="margin-left: 40px;">
+                                                Incorrect !
                                             </div>
-                                            <div class="valid-feedback animated fadeInRight" style="margin-left: 40px;">
-                                                Merci .
-                                            </div>
-                                            <!-- Collapse buttons -->
-                                            <div class="text-left mt-2">
-                                                <a class="btn btn-link font-weight-bold py-0 my-0" data-toggle="collapse" href="#collapseLogin" aria-expanded="false" aria-controls="collapseLogin" style="color:#007bff!important; font-size: 0.7rem;">
-                                                    <i class="fa fa-angle-double-right" aria-hidden="true"></i> &nbsp; Mot de Passe Oublié ?
-                                                </a>
-                                            </div>
-                                            <!-- / Collapse buttons -->   
                                         </div>
 
                                         <!-- Button -->
@@ -205,27 +154,6 @@
                                         </div>
                                         
                                     </form>
-
-                                    <!-- Mot de Passe Oublie --> 
-                                    <!-- Collapsible element -->
-                                    <div class="collapse" id="collapseLogin">
-                                        <hr>
-                                        <form class="needs-validation" action="/user/login" method="post"  novalidate>
-                                            <div class="input-group">
-                                                <input type="email" class="form-control" name="email" placeholder="Email"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" aria-label="Email" aria-describedby="button" required>
-                                                <div class="input-group-append">
-                                                    <button class="btn btn-md btn-outline-success m-0 px-3 py-2 z-depth-0 waves-effect" type="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i> Valider</button>
-                                                </div>
-                                                <div class="invalid-feedback animated fadeInRight" style="font-size: 13px;">
-                                                    S'il vous plaît ajouter Email Valid.
-                                                </div>
-                                                <div class="valid-feedback animated fadeInRight" style="font-size: 13px;">
-                                                    Merci .
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                    <!-- / Collapsible element -->
 
                                 </div>
                                 <!-- Card content -->
