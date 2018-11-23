@@ -37,10 +37,17 @@ app.get("/", (req, res) => {
   });
 });
 
-app.get("/products", (req, res) => {
-  res.render("products", {
+app.get("/productsListe", (req, res) => {
+  res.render("products_liste", {
     path: "/products",
-    PageTitle: "Products Page"
+    PageTitle: "Products Page Liste"
+  });
+});
+
+app.get("/productsGrid", (req, res) => {
+  res.render("products_grid", {
+    path: "/products",
+    PageTitle: "Products Page Gride"
   });
 });
 
