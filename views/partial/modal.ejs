@@ -5,7 +5,7 @@
             <div class="modal-body p-0">
                 
                 <!-- card hoverable Register -->
-                <div class="card hoverable">
+                <div class="card">
 
                     <h5 class="card-header white-text text-center default-color-dark font-weight-bold text-uppercase py-4"><i class="fa fa-user-plus" aria-hidden="true"></i> &nbsp;&nbsp; Register
                         <button type="button" class="close white-text" data-dismiss="modal" aria-label="Close">
@@ -105,7 +105,7 @@
             <div class="modal-body p-0">
                 
                 <!-- card hoverable Login -->
-                <div class="card hoverable">
+                <div class="card">
         
                     <h5 class="card-header white-text text-center default-color-dark font-weight-bold text-uppercase py-4"><i class="fa fa-sign-in" aria-hidden="true"></i> &nbsp;&nbsp; Login
                         <button type="button" class="close white-text" data-dismiss="modal" aria-label="Close">
@@ -117,7 +117,7 @@
                     <div class="card-body">
 
                         <!-- Card shadow -->
-                        <div class="z-depth-2">
+                        <div class="z-depth-5">
 
                             <!-- Card -->
                             <div class="card">
@@ -142,7 +142,8 @@
                                         <div class="md-form mb-3">
                                             <i class="fa fa-lock prefix"></i>
                                             <label for="password">Mot de Passe</label>
-                                            <input type="password" name="password" class="form-control mb-0" required>
+                                            <input type="password" name="password" class="form-control" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                                            <small class="form-text text-muted">Doit contenir au moins un chiffre, une lettre majuscule et minuscule et au moins 8 caractères .</small>
                                             <div class="invalid-feedback animated fadeInRight" style="margin-left: 40px;">
                                                 Incorrect !
                                             </div>
