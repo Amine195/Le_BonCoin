@@ -26,7 +26,7 @@
             <div class="row">
 
                 <!-- article -->
-                <article class="col-xl-8 col-lg-8">
+                <article class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
 
                     <!-- d-flex liste and liste and latest -->
                     <div class="d-flex justify-content-between">
@@ -111,6 +111,11 @@
                                 <%- include('partial/card_liste_product.ejs') %>
                             </div>
 
+                            <!-- Div -->
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 px-2 mb-2">
+                                <%- include('partial/card_liste_product.ejs') %>
+                            </div>
+
                         </div>
 
                     </div>
@@ -124,7 +129,7 @@
                 <!-- article -->
 
                 <!-- aside -->
-                <aside class="col-xl-4 col-lg-4 mb-2">
+                <aside class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 mb-2">
                     <%- include('partial/categorie.ejs') %>
                     <br>
                     <%- include('partial/ville.ejs') %>
