@@ -51,10 +51,17 @@ app.get("/productsGrid", (req, res) => {
   });
 });
 
-app.get("/shops", (req, res) => {
-  res.render("shops", {
+app.get("/shopsListe", (req, res) => {
+  res.render("shops_liste", {
     path: "/shops",
-    PageTitle: "Shops Page"
+    PageTitle: "Shops Page Liste"
+  });
+});
+
+app.get("/shopsGrid", (req, res) => {
+  res.render("shops_grid", {
+    path: "/shops",
+    PageTitle: "Shops Page Grid"
   });
 });
 
