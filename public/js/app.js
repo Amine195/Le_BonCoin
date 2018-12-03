@@ -20,3 +20,8 @@
 $(document).ready(function() {
     $('.mdb-select').materialSelect();
 });
+
+// Tooltips Initialization
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+});
