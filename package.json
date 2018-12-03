@@ -21,13 +21,16 @@
     "popper.js": "^1.14.3"
   },
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.5.0",
     "eslint": "^5.8.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0"
   },
   "nodemonConfig": {
-    "restartable":"rs",
-    "ignore": ["node_modules/**/node_modules"],
+    "restartable": "rs",
+    "ignore": [
+      "node_modules/**/node_modules"
+    ],
     "delay": "2500",
     "env": {
       "NODE_ENV": "development",
