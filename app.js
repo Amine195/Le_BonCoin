@@ -33,7 +33,6 @@ app.use("/js", express.static(path.join(__dirname, "/node_modules/popper.js/dist
 
 // Font Awesome Config
 app.use("/css", express.static(path.join(__dirname, "/node_modules/@fortawesome/fontawesome-free/css")));
-app.use("/js", express.static(path.join(__dirname, "/node_modules/@fortawesome/fontawesome-free/js")));
 app.use("/webfonts", express.static(path.join(__dirname, "/node_modules/@fortawesome/fontawesome-free/webfonts")));
 
 // Using Routes
