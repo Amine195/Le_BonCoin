@@ -28,9 +28,7 @@ app.use("/css", express.static(path.join(__dirname, "/node_modules/bootstrap/dis
 app.use("/js", express.static(path.join(__dirname, "/node_modules/bootstrap/dist/js")));
 app.use("/js", express.static(path.join(__dirname, "/node_modules/jquery/dist")));
 app.use("/js", express.static(path.join(__dirname, "/node_modules/popper.js/dist/umd")));
-app.use("/css", express.static(path.join(__dirname, "/node_modules/@fortawesome/fontawesome-free/css")));
-app.use("/js", express.static(path.join(__dirname, "/node_modules/@fortawesome/fontawesome-free/js")));
-
+app.use("/font", express.static(path.join(__dirname, "/node_modules/@fortawesome/fontawesome-free")));
 
 // Using Routes
 app.get("/", (req, res) => {
