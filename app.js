@@ -24,11 +24,17 @@ const userRoutes = require("./routes/user");
 
 // Static Folder
 app.use(express.static(path.join(__dirname, "/public/")));
+
+// Bootstrap Config
 app.use("/css", express.static(path.join(__dirname, "/node_modules/bootstrap/dist/css")));
 app.use("/js", express.static(path.join(__dirname, "/node_modules/bootstrap/dist/js")));
 app.use("/js", express.static(path.join(__dirname, "/node_modules/jquery/dist")));
 app.use("/js", express.static(path.join(__dirname, "/node_modules/popper.js/dist/umd")));
-app.use("/fontawesome", express.static(path.join(__dirname, "/node_modules/@fortawesome/fontawesome-free")));
+
+// Font Awesome Config
+app.use("/css", express.static(path.join(__dirname, "/node_modules/@fortawesome/fontawesome-free/css")));
+app.use("/js", express.static(path.join(__dirname, "/node_modules/@fortawesome/fontawesome-free/js")));
+app.use("/webfonts", express.static(path.join(__dirname, "/node_modules/@fortawesome/fontawesome-free/webfonts")));
 
 // Using Routes
 app.get("/", (req, res) => {
