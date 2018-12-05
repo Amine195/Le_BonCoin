@@ -16,7 +16,8 @@ exports.Grid = (req, res) => {
 
 // GET Shop Detail Controller
 exports.Detail = (req, res) => {
-    res.render("detail", {
+    res.render("shop/detail", {
+        path: "/shops",
         PageTitle: "Shops Page Detail"
     });
 };

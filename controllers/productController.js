@@ -16,7 +16,7 @@ exports.Grid = (req, res) => {
 
 // GET product Detail Controller
 exports.Detail = (req, res) => {
-    res.render("detail", {
+    res.render("product/detail", {
         PageTitle: "products Page Detail"
     });
 };
