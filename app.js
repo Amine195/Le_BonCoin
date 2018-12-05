@@ -34,20 +34,6 @@ app.get("/", (req, res) => {
   });
 });
 
-app.get("/productsListe", (req, res) => {
-  res.render("products_liste", {
-    path: "/products",
-    PageTitle: "Products Page Liste"
-  });
-});
-
-app.get("/productsGrid", (req, res) => {
-  res.render("products_grid", {
-    path: "/products",
-    PageTitle: "Products Page Gride"
-  });
-});
-
 app.use("/product", productRoutes);
 app.use("/shop", shopRoutes);
 app.use("/user", userRoutes);

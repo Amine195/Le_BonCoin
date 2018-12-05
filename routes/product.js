@@ -1,22 +1,12 @@
+// Express Router
 const express = require("express");
 const router = express.Router();
 
-router.get("/", (req, res) => {
-  res.render("product/index", {
-    PageTitle: "Product Page"
-  });
-});
+// Import ProductController
+const ProductController = require('../controllers/ProductController');
 
-router.get("/create", (req, res) => {
-  res.render("product/create");
-});
-
-router.get("/show", (req, res) => {
-  res.render("product/show");
-});
-
-router.get("/edit", (req, res) => {
-  res.render("product/edit");
-});
-
+router.get("/liste", ProductController.Liste); // Product Liste
+router.get("/grid", ProductController.Grid); // Product Grid
+router.get("/detail", ProductController.Detail); // Product Detail
+  
 module.exports = router;
