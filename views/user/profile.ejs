@@ -1,35 +1,35 @@
     <!-- Head -->
     <%- include('../partial/head.ejs') %>
 
-    <style>
-        .md-accordion .card, .md-accordion .card:first-of-type, .md-accordion .card:not(:first-of-type):not(:last-of-type){
-            border-bottom: 0px solid #e0e0e0;
-        }
-    </style>
-    
 </head>
 
 <body>
-    <!-- Navbar -->
-    <%- include('../partial/navbar.ejs') %>
 
-    <main>
+    <!-- HEADER -->
+    <header class="mb-4">
+        <%- include('../partial/navbar.ejs') %> <!-- Navbar -->
+    </header>
 
+    <!-- MAIN -->
+    <main class="mb-2">
         <!-- Container -->
-        <div class="container">
-            <br><br><br>
-            
-              <h1>Profile</h1>
+        <section class="container profile"> 
 
-        </div>
+            profile
+
+        </section>
         <!-- Container -->
 
     </main>
 
-    <!-- Modal -->
+    <!-- MODAL -->
     <%- include('../partial/modal.ejs') %>
-    <!-- Footer -->
-    <%- include('../partial/footer.ejs') %>
+
+    <!-- FOOTER -->
+    <footer class="page-footer font-small special-color-dark">
+        <%- include('../partial/footer.ejs') %>
+    </footer>
+
     <!-- Script -->
     <%- include('../partial/script.ejs') %>
 

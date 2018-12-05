@@ -20,6 +20,7 @@ app.set("view engine", "ejs");
 
 // Bring Routes
 const productRoutes = require("./routes/product");
+const shopRoutes = require("./routes/shop");
 const userRoutes = require("./routes/user");
 
 // Static Folder
@@ -47,22 +48,8 @@ app.get("/productsGrid", (req, res) => {
   });
 });
 
-app.get("/shopsListe", (req, res) => {
-  res.render("shops_liste", {
-    path: "/shops",
-    PageTitle: "Shops Page Liste"
-  });
-});
-
-app.get("/shopsGrid", (req, res) => {
-  res.render("shops_grid", {
-    path: "/shops",
-    PageTitle: "Shops Page Grid"
-  });
-});
-
-
 app.use("/product", productRoutes);
+app.use("/shop", shopRoutes);
 app.use("/user", userRoutes);
 
 // Server Listening
