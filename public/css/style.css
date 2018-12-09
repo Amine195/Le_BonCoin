@@ -5,7 +5,7 @@ body{
     border-top: 2px solid rgba(0,0,0,0.1);
 }
 
-/* Ville ASIDE Style */
+/* Ville ASIDE Style Scrollbarr*/
 
 .ville {
 position: relative;
@@ -31,5 +31,5 @@ overflow-y: scroll;
 }
 
 .thin::-webkit-scrollbar {
-    width: 4px;
+    width: 4px; 
 }
