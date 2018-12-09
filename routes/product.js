@@ -3,7 +3,7 @@ const express = require("express");
 const router = express.Router();
 
 // Import ProductController
-const ProductController = require('../controllers/ProductController');
+const ProductController = require('../controllers/productController');
 
 router.get("/liste", ProductController.Liste); // Product Liste
 router.get("/grid", ProductController.Grid); // Product Grid
