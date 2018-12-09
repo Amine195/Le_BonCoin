@@ -11,18 +11,16 @@
     </header>
 
     <!-- MAIN -->
-    <main class="mb-2">
-        <!-- Container -->
-        <section class="container shops">
-
+    <main class="container mb-2">
+        
             <!-- Row -->
             <div class="row">
 
                 <!-- article -->
-                <article class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                <section class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
 
                     <!-- d-flex liste and liste and latest -->
-                    <div class="d-flex justify-content-between">
+                    <article class="d-flex justify-content-between">
                         <div>
                             <h5 class="font-weight-bold mt-0 ml-1"><strong><i class="fas fa-shopping-bag"></i> BOUTIQUES</strong></h5>
                         </div>
@@ -64,7 +62,7 @@
                                 <a href="/shop/grid" class="black-text"><i class="fas fa-th"></i></a>
                             </div>              
                         </div>
-                    </div>
+                    </article>
 
                     <hr class="red title-hr mt-0 mb-2">
 
@@ -73,7 +71,7 @@
 
                     <!-- Row Div 1 -->
 
-                    <div class="row px-2">
+                    <article class="row px-2">
 
                         <!-- Div -->
                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 px-2 mb-2">
@@ -130,7 +128,27 @@
                             <%- include('../partial/card_shop/liste.ejs') %>
                         </div>
 
-                    </div>
+                        <!-- Div -->
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 px-2 mb-2">
+                            <%- include('../partial/card_shop/liste.ejs') %>
+                        </div>
+
+                        <!-- Div -->
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 px-2 mb-2">
+                            <%- include('../partial/card_shop/liste.ejs') %>
+                        </div>
+
+                        <!-- Div -->
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 px-2 mb-2">
+                            <%- include('../partial/card_shop/liste.ejs') %>
+                        </div>
+
+                        <!-- Div -->
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 px-2 mb-2">
+                            <%- include('../partial/card_shop/liste.ejs') %>
+                        </div>
+
+                    </article>
 
                     <!-- Row Div 1 -->
                    
@@ -138,7 +156,7 @@
                     <%- include('../partial/component/paginate.ejs') %>
                     <!-- Paginate -->
 
-                </article>
+                </section>
                 <!-- article -->
 
                 <!-- aside -->
@@ -150,6 +168,24 @@
                         <div class="col-xl-12 col-lg-12 col-md-6 col-sm-12 col-12 mb-4">
                             <%- include('../partial/ville.ejs') %>
                         </div>
+                        <div class="col-xl-12 col-lg-12 col-md-6 col-sm-12 col-12 mb-2">
+                            <h5 class="font-weight-bold mt-0 ml-1"><strong><i class="fas fa-star amber-text"></i> BEST BOUTIQUES</strong></h5>
+                            <hr class="red title-hr mt-0">
+                            <%- include('../partial/card_shop/best.ejs') %>
+                            <%- include('../partial/card_shop/best.ejs') %>
+                            <%- include('../partial/card_shop/best.ejs') %>
+                            <%- include('../partial/card_shop/best.ejs') %>
+                            <%- include('../partial/card_shop/best.ejs') %>
+                        </div>
+                        <div class="col-xl-12 col-lg-12 col-md-6 col-sm-12 col-12 mb-2">
+                            <h5 class="font-weight-bold mt-0 ml-1"><strong><i class="fas fa-star amber-text"></i> BEST PRODUCTS</strong></h5>
+                            <hr class="red title-hr mt-0">
+                            <%- include('../partial/card_product/best.ejs') %>
+                            <%- include('../partial/card_product/best.ejs') %>
+                            <%- include('../partial/card_product/best.ejs') %>
+                            <%- include('../partial/card_product/best.ejs') %>
+                            <%- include('../partial/card_product/best.ejs') %>
+                        </div>
                     </div>
                 </aside>
                 <!-- aside -->
@@ -159,9 +195,6 @@
 
             <!-- Button Back Top -->
             <%- include('../partial/component/back_top.ejs') %>
-
-        </section>
-        <!-- Container -->
 
     </main>
 
