@@ -6,6 +6,7 @@ const router = express.Router();
 const UserController = require('../controllers/userController');
 
 // Routes
+router.get("/dashboard", UserController.GetDashboard); // Dashboard
 router.get("/profile", UserController.GetProfile); // Profile
 
 module.exports = router;

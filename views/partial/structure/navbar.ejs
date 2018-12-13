@@ -17,7 +17,6 @@
             <!-- Links left -->
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item <%= path === '/' ? 'active' : '' %>"><a class="nav-link" href="/"><i class="fas fa-home"></i> Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
                 <li class="nav-item <%= path === '/products' ? 'active' : '' %>"><a class="nav-link" href="/product/liste"><i class="fab fa-product-hunt"></i> Products</a></li>
                 <li class="nav-item <%= path === '/shops' ? 'active' : '' %>"><a class="nav-link" href="/shop/liste"><i class="fas fa-shopping-cart"></i> Shops</a></li>
             </ul>
@@ -27,7 +26,8 @@
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a class="nav-link" data-toggle="modal" data-target="#register"><i class="fas fa-user-plus"></i> Register</a></li>
                 <li class="nav-item"><a class="nav-link" data-toggle="modal" data-target="#login"><i class="fas fa-sign-in-alt"></i> Login</a></li>
-                <li class="nav-item <%= path === '/profile' ? 'active' : '' %>"><a class="nav-link" href="/user/profile"><i class="fas fa-user"></i> Profile</a></li>
+                <li class="nav-item <%= path === '/dashboard' ? 'active' : '' %>"><a class="nav-link" href="/user/dashboard"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                <!-- <li class="nav-item <%= path === '/profile' ? 'active' : '' %>"><a class="nav-link" href="/user/profile"><i class="fas fa-user"></i> Profile</a></li> -->
                 <li class="nav-item"><a class="nav-link" data-toggle="modal" data-target="#logout"><i class="fas fa-power-off"></i> Deconnecter</a></li>
             </ul>
             <!-- Links right -->
