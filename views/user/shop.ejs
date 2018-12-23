@@ -13,51 +13,31 @@
     <!-- MAIN -->
     <main class="container mb-2">
         
-        <!-- Row -->
-        <div class="row">
+        <!-- article -->
+        <section >
 
-            <!-- aside -->
-            <aside class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 mb-2">
-                <%- include('../partial/dashboard.ejs') %>       
-            </aside>
-            <!-- aside -->
+            <%- include('../partial/dashboard/navbar.ejs') %>
 
-            <!-- article -->
-            <section class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+            <h5 class="font-weight-bold mt-0 ml-1"><strong><i class="fas fa-store mr-2"></i>BOUTIQUES</strong></h5>
+            <hr class="red title-hr mt-0 mb-2">
 
+            <article>
 
-                <h5 class="font-weight-bold mt-0 ml-1"><strong><i class="fas fa-store mr-2"></i>BOUTIQUES</strong></h5>
-                <hr class="red title-hr mt-0 mb-2">
+                <!-- BreadCrump -->
+                <%- include('../partial/component/breadcrump.ejs') %>
 
-                <article>
+                <!-- Editable table -->
+                <%- include('../partial/table/shop.ejs') %>
+                <!-- Editable table -->
 
-                    <!-- BreadCrump -->
-                    <%- include('../partial/component/breadcrump.ejs') %>
+                <!-- Paginate -->
+                <%- include('../partial/component/paginate.ejs') %>
+                <!-- Paginate -->
 
-                    <!-- Editable table -->
-                    <%- include('../partial/card_shop/liste.ejs') %>
-                    <br>
-                    <%- include('../partial/card_shop/liste.ejs') %>
-                    <br>
-                    <%- include('../partial/card_shop/liste.ejs') %>
-                    <br>
-                    <%- include('../partial/card_shop/liste.ejs') %>
-                    <br>
-                    <!-- Editable table -->
+            </article>
 
-                    <!-- Paginate -->
-                    <%- include('../partial/component/paginate.ejs') %>
-                    <!-- Paginate -->
-
-                </article>
-
-            </section>
-            <!-- article -->
-
-            
-
-        </div>
-        <!-- Row -->
+        </section>
+        <!-- article -->
 
     </main>
 

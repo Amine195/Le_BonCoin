@@ -1,6 +1,15 @@
     <!-- Head -->
     <%- include('../partial/structure/head.ejs') %>
 
+    <style>
+        .dashboard-icon {
+            background: rgba(158, 158, 158, 0.5);
+            border-radius: 50%;
+            height: 2.5em;
+            width: 2.5em;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -17,21 +26,24 @@
         <div class="row">
 
             <!-- aside -->
-            <aside class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 mb-2">
-                <%- include('../partial/dashboard.ejs') %>       
+            <aside class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12 mb-2">
+
+                <div class="row">
+                    <div class="col-xl-12 col-lg-6 col-md-6 col-sm-12 col-12 mb-4">
+                        <%- include('../partial/dashboard/user_account.ejs') %>
+                    </div>
+                    <div class="col-xl-12 col-lg-6 col-md-6 col-sm-12 col-12 mb-4">
+                        <%- include('../partial/dashboard/quick_link.ejs') %>
+                    </div>
+                </div>
             </aside>
             <!-- aside -->
 
             <!-- article -->
-            <section class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
-
-
-                <h5 class="font-weight-bold mt-0 ml-1"><strong><i class="fas fa-laptop mr-2"></i>DASHBOARD</strong></h5>
-                <hr class="red title-hr mt-0 mb-2">
+            <section class="col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12">
 
                 <article>
-
-
+                    <%- include('../partial/dashboard/dashboard_card.ejs') %>
                 </article>
 
             </section>

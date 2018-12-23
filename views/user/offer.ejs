@@ -12,35 +12,32 @@
 
     <!-- MAIN -->
     <main class="container mb-2">
-        
-        <!-- Row -->
-        <div class="row">
-
-            <!-- aside -->
-            <aside class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 mb-2">
-                <%- include('../partial/dashboard.ejs') %>       
-            </aside>
-            <!-- aside -->
 
             <!-- article -->
-            <section class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+            <section>
 
+                <%- include('../partial/dashboard/navbar.ejs') %>
 
-                <h5 class="font-weight-bold mt-0 ml-1"><strong><i class="fas fa-info-circle mr-2"></i>PROFILE</strong></h5>
+                <h5 class="font-weight-bold mt-0 ml-1"><strong><i class="far fa-list-alt mr-2"></i>MES ANNONCES</strong></h5>
                 <hr class="red title-hr mt-0 mb-2">
 
                 <article>
 
+                    <!-- BreadCrump -->
+                    <%- include('../partial/component/breadcrump.ejs') %>
+
+                    <!-- Editable table -->
+                    <%- include('../partial/table/announce.ejs') %>
+                    <!-- Editable table -->
+
+                    <!-- Paginate -->
+                    <%- include('../partial/component/paginate.ejs') %>
+                    <!-- Paginate -->
 
                 </article>
 
             </section>
             <!-- article -->
-
-            
-
-        </div>
-        <!-- Row -->
 
     </main>
 
