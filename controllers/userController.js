@@ -10,6 +10,7 @@ exports.GetDashboard = (req, res) => {
 exports.GetProfile = (req, res) => {
     res.render("user/profile", {
         path: "/dashboard",
+        road: "/profile",
         PageTitle: "My Profile Page"
     });
 }
@@ -18,6 +19,7 @@ exports.GetProfile = (req, res) => {
 exports.GetProduct = (req, res) => {
     res.render("user/product", {
         path: "/dashboard",
+        road: "/product",
         PageTitle: "My Product Page"
     });
 }
@@ -26,14 +28,25 @@ exports.GetProduct = (req, res) => {
 exports.GetShop = (req, res) => {
     res.render("user/shop", {
         path: "/dashboard",
+        road: "/shop",
         PageTitle: "My Shop Page"
     });
 }
 
-// GET Announce Controller
-exports.GetAnnounce = (req, res) => {
-    res.render("user/announce", {
+// GET Offer Controller
+exports.GetOffer = (req, res) => {
+    res.render("user/offer", {
         path: "/dashboard",
-        PageTitle: "My Announce Page"
+        road: "/offer",
+        PageTitle: "My offer Page"
+    });
+}
+
+// GET Request Controller
+exports.GetRequest = (req, res) => {
+    res.render("user/offer", {
+        path: "/dashboard",
+        road: "/request",
+        PageTitle: "My request Page"
     });
 }

@@ -10,6 +10,7 @@ router.get("/dashboard", UserController.GetDashboard); // Dashboard
 router.get("/profile", UserController.GetProfile); // Profile
 router.get("/product", UserController.GetProduct); // Product
 router.get("/shop", UserController.GetShop); // Shop
-router.get("/announce", UserController.GetAnnounce); // Announce
+router.get("/offer", UserController.GetOffer); // Offer
+router.get("/request", UserController.GetRequest); // Request
 
 module.exports = router;
