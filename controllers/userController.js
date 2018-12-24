@@ -44,7 +44,7 @@ exports.GetOffer = (req, res) => {
 
 // GET Request Controller
 exports.GetRequest = (req, res) => {
-    res.render("user/offer", {
+    res.render("user/request", {
         path: "/dashboard",
         road: "/request",
         PageTitle: "My request Page"

@@ -1,0 +1,57 @@
+    <!-- Head -->
+    <%- include('../partial/structure/head.ejs') %>
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="mb-4">
+        <%- include('../partial/structure/navbar.ejs') %> <!-- Navbar -->
+    </header>
+
+    <!-- MAIN -->
+    <main class="container mb-2">
+
+            <!-- article -->
+            <section>
+
+                <%- include('../partial/dashboard/navbar.ejs') %>
+
+                <h5 class="font-weight-bold mt-0 ml-1"><strong><i class="far fa-list-alt mr-2"></i>MES ANNONCES</strong></h5>
+                <hr class="red title-hr mt-0 mb-2">
+
+                <article>
+
+                    <!-- BreadCrump -->
+                    <%- include('../partial/component/breadcrump.ejs') %>
+
+                    <!-- Editable table -->
+                    <%- include('../partial/table/announce.ejs') %>
+                    <!-- Editable table -->
+
+                    <!-- Paginate -->
+                    <%- include('../partial/component/paginate.ejs') %>
+                    <!-- Paginate -->
+
+                </article>
+
+            </section>
+            <!-- article -->
+
+    </main>
+
+    <!-- MODAL -->
+    <%- include('../partial/component/modal.ejs') %>
+
+    <!-- FOOTER -->
+    <footer class="page-footer font-small special-color-dark">
+        <%- include('../partial/structure/footer.ejs') %>
+    </footer>
+
+    <!-- Script -->
+    <%- include('../partial/structure/script.ejs') %>
+
+</body>
+
+</html>

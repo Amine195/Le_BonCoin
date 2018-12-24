@@ -1,1 +1,76 @@
-<h1>Add Product</h1>
+    <!-- Head -->
+    <%- include('../partial/structure/head.ejs') %>
+
+    <style>
+        body, html {
+            height: 100%;
+        }
+        .bg {
+            /* The image used */
+            background-image: url("../img/add_product.jpg");
+
+            /* Half height */
+            height: 25%;
+
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <%- include('../partial/structure/navbar.ejs') %> <!-- Navbar -->
+    </header>
+
+    <!-- Card image -->
+    <div class="bg"></div>
+
+    <!-- MAIN -->
+    <main class="container">
+
+        <!-- article -->
+        <section>
+
+            <article>
+
+                <!-- Card -->
+                <div class="card card-cascade wider reverse">
+        
+                    <!-- Card content -->
+                    <div class="card-body card-body-cascade" style="margin-top:-150px">
+                                        
+                        <!-- form -->
+                        <%- include('../partial/form/add_product.ejs') %>
+                    
+                    </div>
+        
+                </div>
+                <!-- Card -->
+
+            </article>
+
+        </section>
+        <!-- article -->
+
+    </main>
+
+    <!-- MODAL -->
+    <%- include('../partial/component/modal.ejs') %>
+
+    <!-- FOOTER -->
+    <footer class="page-footer font-small special-color-dark" style="margin-top:71px;">
+        <%- include('../partial/structure/small_footer.ejs') %>
+    </footer>
+
+    <!-- Script -->
+    <%- include('../partial/structure/script.ejs') %>
+
+</body>
+
+</html>
