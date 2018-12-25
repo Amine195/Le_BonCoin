@@ -21,3 +21,11 @@ exports.Detail = (req, res) => {
         PageTitle: "Shops Page Detail"
     });
 };
+
+// GET add product Controller
+exports.Add = (req, res) => {
+    res.render("action/add_shop", {
+        path: "/dashboard",
+        PageTitle: "add shops Page"
+    });
+};
