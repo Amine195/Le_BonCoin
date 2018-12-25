@@ -1,0 +1,101 @@
+<!-- Form -->
+<form class="px-xl-4 px-lg-3 mx-xl-4 mx-lg-3">
+
+    <!-- Title -->
+    <h5 class="font-weight-bold mt-2 mb-2"><strong><i class="far fa-plus-square mr-2"></i>AJOUTER UNE NOUVELLE BOUTIQUE</strong><small><a href="/user/shop" class="font-weight-bold ml-3"><i class="fas fa-arrow-circle-left"></i> Return</a></small></h5>
+    <hr class="red title-hr mt-0 mb-4">    
+
+    <div class="row">
+
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+            <!-- Name -->
+            <div class="form-group">
+                <label class="ml-1" for="name"><strong>Nom de la Boutique :</strong></label>
+                <input type="text" class="form-control" aria-describedby="nameHelp">
+                <small id="nameHelp" class="form-text text-muted">Ne doit pas comporter plus de 20 charactère .</small>
+            </div>
+        </div>
+
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+            <!-- Price -->
+            <div class="form-group">
+                <label class="ml-1" for="name"><strong>Adresse de la Boutique  :</strong></label>
+                <input type="text" class="form-control" aria-describedby="adresseHelp">
+                <small id="adresseHelp" class="form-text text-muted">Voila le <a href="https://www.google.com/maps/place/Alg%C3%A9rie/@27.8003577,-7.3439053,5z/data=!3m1!4b1!4m5!3m4!1s0xd7e8a6a28037bd1:0x7140bee3abd7f8a2!8m2!3d28.033886!4d1.659626" target="_blank">Lien</a> pour vous aider a mieu touver votre adresse</small>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+            <!-- Categorie -->
+            <label class="ml-1" for="categorie"><strong>Catégorie :</strong></label>
+            <select class="browser-default custom-select">
+                <option value="" disabled selected>Selectionner Une Catégorie</option>
+                <option value="1">Téléphonie</option>
+                <option value="2">Automobile</option>
+                <option value="3">Immobilier</option>
+            </select>
+        </div>
+
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 mt-xl-0 mt-lg-0 mt-md-3 mt-sm-3 mt-3">
+            <!-- Ville -->
+            <label class="ml-1" for="ville"><strong>Ville :</strong></label>
+            <select class="browser-default custom-select">
+                <option value="" disabled selected>Selectionner Une Ville</option>
+                <option value="1">Sidi Bel Abbes</option>
+                <option value="2">Telemcen</option>
+                <option value="3">Oran</option>
+            </select>
+        </div>
+
+    </div>
+
+    <div class="row mt-3">
+
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+            <!-- Address -->
+            <div class="form-group">
+                <label class="ml-1" for="name"><strong>Adresse LAT :</strong></label>
+                <input type="text" class="form-control" aria-describedby="gpsHelp">
+                <small id="gpsHelp" class="form-text text-muted">Voila le <a href="https://www.coordonnees-gps.fr/" target="_blank">Lien</a> pour vous aider a mieu touver vos cordonnées GPS</small>
+            </div>
+        </div>
+
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+            <!-- Téléphone -->
+            <div class="form-group">
+                <label class="ml-1" for="name"><strong>Adresse LNG :</strong></label>
+                <input type="text" class="form-control">
+            </div>
+        </div>
+    
+    </div>
+
+    <!-- Description -->
+    <div class="form-group">
+        <label class="ml-1" for="description"><strong>Description :</strong></label>
+        <textarea class="form-control rounded-0" rows="3"></textarea>
+    </div>
+
+    <!-- Images -->
+    <label class="ml-1" for="images"><strong>Images : </strong></label>
+    <div class="input-group">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
+        </div>
+        <div class="custom-file">
+            <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+            <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+        </div>
+    </div>
+
+    <div class="text-center mt-4">
+        <button type="button" class="btn btn-primary btn-rounded px-5">Valider</button>
+    </div>
+    
+
+</form>
+<!-- Form -->
