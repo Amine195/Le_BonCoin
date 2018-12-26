@@ -21,6 +21,7 @@ app.set("view engine", "ejs");
 // Bring Routes
 const productRoutes = require("./routes/product");
 const shopRoutes = require("./routes/shop");
+const announceRoutes = require("./routes/announce");
 const userRoutes = require("./routes/user");
 
 // Static Folder
@@ -36,6 +37,7 @@ app.get("/", (req, res) => {
 
 app.use("/product", productRoutes);
 app.use("/shop", shopRoutes);
+app.use("/announce", announceRoutes);
 app.use("/user", userRoutes);
 
 // Server Listening
