@@ -33,20 +33,11 @@ exports.GetShop = (req, res) => {
     });
 }
 
-// GET Offer Controller
-exports.GetOffer = (req, res) => {
-    res.render("user/offer", {
+// GET Announce Controller
+exports.GetAnnounce = (req, res) => {
+    res.render("user/announce", {
         path: "/dashboard",
-        road: "/offer",
-        PageTitle: "My offer Page"
-    });
-}
-
-// GET Request Controller
-exports.GetRequest = (req, res) => {
-    res.render("user/request", {
-        path: "/dashboard",
-        road: "/request",
-        PageTitle: "My request Page"
+        road: "/announce",
+        PageTitle: "My announce Page"
     });
 }
