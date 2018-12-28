@@ -6,17 +6,45 @@
 <body>
 
     <!-- HEADER -->
-    <header class="mb-4">
+    <header>
         <%- include('partial/structure/navbar.ejs') %> <!-- Navbar -->
     </header>
 
     <!-- MAIN -->
     <main>
+
+        <!-- PARALAX -->
+        <%- include('partial/component/paralax.ejs') %>
+
         <section class="container index">
-            <h1 class="m-5">hello Word</h1>
-            <%- include('partial/component/flash_msg.ejs') %>
+
+            <h5 class="font-weight-bold mt-5 ml-1"><strong>NOS MEILLIEURS CATEGORIES</strong></h5>
+            <hr class="red title-hr mt-0 mb-2">
+            <%- include('partial/component/best_categorie.ejs') %>
+            
+            <h5 class="font-weight-bold mt-4 ml-1"><strong>NOS MEILLIEURS BOUTIQUES</strong></h5>
+            <hr class="red title-hr mt-0 mb-2">
+            <div class="row">
+                <%- include('partial/component/best_boutique.ejs') %>
+            </div>
+
+            <h5 class="font-weight-bold mt-4 ml-1"><strong>NOS MEILLIEURS PRODUIT</strong></h5>
+            <hr class="red title-hr mt-0 mb-2">
+            <div class="row">
+                <%- include('partial/component/best_product.ejs') %>
+            </div>
+
+            <h5 class="font-weight-bold mt-4 ml-1"><strong>NOS MEILLIEURS ANNONCES</strong></h5>
+            <hr class="red title-hr mt-0 mb-2">
+            <div class="row">
+                <%- include('partial/component/best_announce.ejs') %>
+            </div>
+
+            <h5 class="font-weight-bold mt-4 ml-1"><strong>NOUS CONTACTER</strong></h5>
+            <hr class="red title-hr mt-0 mb-2">
+            <%- include('partial/form/contact.ejs') %>
+
         </section>
-        <br><br><br>
     </main>
 
     <!-- MODAL -->
