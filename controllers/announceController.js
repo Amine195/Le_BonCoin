@@ -13,3 +13,11 @@ exports.Grid = (req, res) => {
         PageTitle: "announces Page Grid"
     });
 };
+
+// GET add product Controller
+exports.Add = (req, res) => {
+    res.render("action/add_announce", {
+        path: "/dashboard",
+        PageTitle: "add Annouces Page"
+    });
+};

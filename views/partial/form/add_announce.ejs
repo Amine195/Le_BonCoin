@@ -1,0 +1,69 @@
+<!-- Form -->
+<form class="px-xl-4 px-lg-3 mx-xl-4 mx-lg-3">
+
+    <!-- Title -->
+    <h5 class="font-weight-bold mt-2 mb-2"><strong><i class="far fa-plus-square mr-2"></i>AJOUTER UNE NOUVELLE ANNOUNCES</strong><small><a href="/user/announce" class="font-weight-bold ml-3"><i class="fas fa-arrow-circle-left"></i> Return</a></small></h5>
+    <hr class="red title-hr mt-0 mb-4">    
+
+    <div class="row">
+
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+            <!-- Titre -->
+            <div class="form-group">
+                <label class="ml-1" for="name"><strong>Titre de l'annonce :</strong></label>
+                <input type="text" class="form-control" aria-describedby="nameHelp">
+                <small id="nameHelp" class="form-text text-muted">Ne doit pas comporter plus de 20 charactère .</small>
+            </div>
+        </div>
+
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+            <!-- Status -->
+            <label class="ml-1" for="categorie"><strong>Status :</strong></label>
+            <select class="browser-default custom-select">
+                <option value="" disabled selected>Selectionner Un Status</option>
+                <option value="1">Demande</option>
+                <option value="2">Offre</option>
+            </select>
+        </div>
+
+    </div>
+
+    <div class="row mb-3">
+
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+            <!-- Categorie -->
+            <label class="ml-1" for="categorie"><strong>Catégorie :</strong></label>
+            <select class="browser-default custom-select">
+                <option value="" disabled selected>Selectionner Une Catégorie</option>
+                <option value="1">Téléphonie</option>
+                <option value="2">Automobile</option>
+                <option value="3">Immobilier</option>
+            </select>
+        </div>
+
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 mt-xl-0 mt-lg-0 mt-md-3 mt-sm-3 mt-3">
+            <!-- Ville -->
+            <label class="ml-1" for="ville"><strong>Ville :</strong></label>
+            <select class="browser-default custom-select">
+                <option value="" disabled selected>Selectionner Une Ville</option>
+                <option value="1">Sidi Bel Abbes</option>
+                <option value="2">Telemcen</option>
+                <option value="3">Oran</option>
+            </select>
+        </div>
+
+    </div>
+
+    <!-- Description -->
+    <div class="form-group">
+        <label class="ml-1" for="description"><strong>Description :</strong></label>
+        <textarea class="form-control rounded-0" rows="4"></textarea>
+    </div>
+
+    <div class="text-center mt-4">
+        <button type="button" class="btn btn-primary btn-rounded px-5">Valider</button>
+    </div>
+    
+
+</form>
+<!-- Form -->

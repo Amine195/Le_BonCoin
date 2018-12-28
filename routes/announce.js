@@ -10,6 +10,6 @@ router.get("/liste", AnnounceController.Liste); // Announce Liste
 router.get("/grid", AnnounceController.Grid); // Announce Grid
 
 // Action Announce
-// router.get("/add", AnnounceController.Add); // Add Announce
+router.get("/add", AnnounceController.Add); // Add Announce
   
 module.exports = router;

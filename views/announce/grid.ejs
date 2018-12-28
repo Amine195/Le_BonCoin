@@ -30,9 +30,8 @@
                             <a href="#" class="dropdown-toggle font-weight-bold black-text mr-2" type="button" id="dropdownFilter" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><small><i class="fas fa-filter"></i></small> Filter By</a>
                             <!--Menu Filter-->
                             <div class="dropdown-menu">
-                                <a class="font-weight-bold dropdown-item" style="font-size:0.9rem" href="#"><i class="far fa-clock mr-1"></i>Les Plus Récent</a>
-                                <a class="font-weight-bold dropdown-item" style="font-size:0.9rem" href="#"><i class="fas fa-comments mr-1"></i>Les Plus Commenter</a>
-                                <a class="font-weight-bold dropdown-item" style="font-size:0.9rem" href="#"><i class="far fa-eye mr-1"></i>Les Plus Vue</a>  
+                                <a class="font-weight-bold dropdown-item" style="font-size:0.9rem" href="#"><i class="far fa-list-alt mr-1"></i>Offres</a>
+                                <a class="font-weight-bold dropdown-item" style="font-size:0.9rem" href="#"><i class="far fa-list-alt mr-1"></i>Demandes</a>
                             </div>
                             <div class="float-right d-none d-sm-block">            
                                 <a href="/announce/liste" class="black-text"><i class="fas fa-list"></i></a>
@@ -174,14 +173,18 @@
                             <%- include('../partial/ville.ejs') %>
                         </div>
                         <div class="col-xl-12 col-lg-12 col-md-6 col-sm-12 col-12 mb-2">
-                            <h5 class="font-weight-bold mt-0 ml-1"><strong><i class="fas fa-star amber-text"></i> BEST BOUTIQUES</strong></h5>
+                            <h5 class="font-weight-bold mt-0 ml-1"><strong><i class="fas fa-star amber-text"></i> TOP 10 ANNONCES</strong></h5>
                             <hr class="red title-hr mt-0">
-                            123
-                        </div>
-                        <div class="col-xl-12 col-lg-12 col-md-6 col-sm-12 col-12 mb-2">
-                            <h5 class="font-weight-bold mt-0 ml-1"><strong><i class="fas fa-star amber-text"></i> BEST PRODUCTS</strong></h5>
-                            <hr class="red title-hr mt-0">
-                            123
+                            <%- include('../partial/card_announce/best.ejs') %>
+                            <%- include('../partial/card_announce/best.ejs') %>
+                            <%- include('../partial/card_announce/best.ejs') %>
+                            <%- include('../partial/card_announce/best.ejs') %>
+                            <%- include('../partial/card_announce/best.ejs') %>
+                            <%- include('../partial/card_announce/best.ejs') %>
+                            <%- include('../partial/card_announce/best.ejs') %>
+                            <%- include('../partial/card_announce/best.ejs') %>
+                            <%- include('../partial/card_announce/best.ejs') %>
+                            <%- include('../partial/card_announce/best.ejs') %>
                         </div>
                     </div>
                 </aside>
